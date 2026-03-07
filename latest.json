@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-07T22:53:08.127102",
+    "last_updated": "2026-03-07T23:29:11.766772",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.74"
@@ -321,8 +321,8 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 4.77,
-          "hard_sessions_planned": 2,
+          "planned_tss_delta": 2.48,
+          "hard_sessions_planned": 1,
           "race_proximity": 0,
           "next_week_load": 1.83,
           "plan_coverage_current_week": 0.4,
@@ -359,7 +359,7 @@
     "p_max": 616,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 39.0,
-    "calculation_timestamp": "2026-03-07T22:53:08.126291",
+    "calculation_timestamp": "2026-03-07T23:29:11.765800",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -403,8 +403,8 @@
       "efficiency_factor": 0.9047619,
       "hrrc": null,
       "elevation_m": 64.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 4,
+      "rpe": 9,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2198,
@@ -507,8 +507,8 @@
       "efficiency_factor": 0.85294116,
       "hrrc": null,
       "elevation_m": 49.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 1,
+      "rpe": 2,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 361,
@@ -909,15 +909,15 @@
       "description": ""
     },
     {
-      "id": 95722748,
+      "id": 97082621,
       "date": "2026-03-08",
-      "name": "IntervalCoach - Long Aerobic",
+      "name": "Recovery Spin",
       "type": "WORKOUT",
-      "planned_tss": 190,
-      "duration_hours": 5.38,
-      "duration_formatted": "5h23m",
+      "planned_tss": 27,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
       "workout_summary": null,
-      "description": "Warmup\n- Hi Duppie let's settle in for a long steady ride 15m ramp 40-60% 90rpm\n\nMain Set\n- Aerobic Base 298m 60% 85rpm\n\nCooldown\n- Great endurance work Duppie time to recover 10m ramp 55-40% 80rpm\n\n[Weekly Plan - Base]"
+      "description": "Warmup\n- Hi Duppie let's keep the legs moving very easily today 11m ramp 40-48% 90rpm\n\nMain Set\n- Recovery Spin 56m 48% 90rpm\n\nCooldown\n- Great job staying disciplined Duppie now rest up 8m ramp 48-40% 85rpm"
     },
     {
       "id": 96250753,
