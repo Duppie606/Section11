@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-09T16:42:07.049821",
+    "last_updated": "2026-03-09T17:36:04.334922",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -298,7 +298,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 2.05,
+          "planned_tss_delta": 2.06,
           "hard_sessions_planned": 4,
           "race_proximity": 5,
           "next_week_load": 0.73,
@@ -336,7 +336,7 @@
     "p_max": 616,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-09T16:42:07.048967",
+    "calculation_timestamp": "2026-03-09T17:36:04.334080",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -742,11 +742,11 @@
       "date": "2026-03-09",
       "name": "IntervalCoach - Fat Max Ride",
       "type": "WORKOUT",
-      "planned_tss": 60,
-      "duration_hours": 1.43,
-      "duration_formatted": "1h26m",
+      "planned_tss": 63,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
       "workout_summary": null,
-      "description": "Warmup\n- Hi Duppie let's settle into a steady rhythm for this fat oxidation session 13m ramp 40-60% 90rpm\n\nMain Set\n- Fat Max Steady State 64m 68% 85rpm\n\nCooldown\n- Great work Duppie stay hydrated and enjoy the recovery 9m ramp 55-40% 80rpm\n\n[Weekly Plan - Base]"
+      "description": "Warmup\n- Hi Duppie let's settle into a steady rhythm for this fat oxidation session 13m ramp 40-60% 90rpm\n\nMain Set\n- Fat Max Steady State 68m 68% 85rpm\n\nCooldown\n- Great work Duppie stay hydrated and enjoy the recovery 9m ramp 55-40% 80rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 96686950,
