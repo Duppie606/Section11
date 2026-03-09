@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-09T11:50:36.879453",
+    "last_updated": "2026-03-09T12:20:41.838362",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -56,7 +56,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -18.9
+        "value": -16.4
       }
     },
     "signal_summary": {
@@ -105,10 +105,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 34.3,
-      "atl": 53.19,
-      "tsb": -18.89,
-      "ramp_rate": 5.86,
+      "ctl": 33.68,
+      "atl": 50.07,
+      "tsb": -16.39,
+      "ramp_rate": 5.24,
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
@@ -145,7 +145,7 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 87.059,
+      "weight_kg": 86.61,
       "resting_hr": 52,
       "hrv": 49.0,
       "sleep_quality": 2,
@@ -301,9 +301,9 @@
           "planned_tss_delta": 2.17,
           "hard_sessions_planned": 5,
           "race_proximity": 5,
-          "next_week_load": 0.58,
+          "next_week_load": 0.73,
           "plan_coverage_current_week": 1.2,
-          "plan_coverage_next_week": 0.4
+          "plan_coverage_next_week": 0.6
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -336,7 +336,7 @@
     "p_max": 616,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-09T11:50:36.878014",
+    "calculation_timestamp": "2026-03-09T12:20:41.837513",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -710,7 +710,7 @@
     },
     {
       "date": "2026-03-09",
-      "weight_kg": null,
+      "weight_kg": 86.61,
       "resting_hr": 52,
       "hrv_rmssd": 49.0,
       "hrv_sdnn": null,
@@ -802,6 +802,17 @@
       "duration_formatted": "0s",
       "workout_summary": null,
       "description": ""
+    },
+    {
+      "id": 97416528,
+      "date": "2026-03-16",
+      "name": "IntervalCoach - Aerobic Endurance",
+      "type": "WORKOUT",
+      "planned_tss": 54,
+      "duration_hours": 1.43,
+      "duration_formatted": "1h26m",
+      "workout_summary": null,
+      "description": "Warmup\n- Hi Duppie let's ease into this long aerobic ride 13m ramp 50-68% 85rpm\n\nMain Set\n- Steady aerobic base 8m 60% 85rpm\n- Slightly higher aerobic 12m 68% 90rpm\n- Aerobic tempo touch block 10m 60% 75rpm\n- Steady aerobic base 10m 60% 85rpm\n- Build aerobic capacity 12m 68% 90rpm\n- Final aerobic block 12m 55% 85rpm\n\nCooldown\n- Great steady work Duppie recover well 9m ramp 65-50%\n\n[Weekly Plan - Base]"
     },
     {
       "id": 92557670,
@@ -937,12 +948,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 2,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 9.2,
