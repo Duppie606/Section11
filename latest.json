@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-09T00:51:35.728839",
+    "last_updated": "2026-03-09T02:54:05.439603",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -55,31 +55,33 @@
         "value": null
       },
       "tsb": {
-        "status": "amber",
+        "status": "green",
         "value": -18.9
       }
     },
     "signal_summary": {
-      "green": 2,
-      "amber": 1,
+      "green": 3,
+      "amber": 0,
       "red": 0,
       "unavailable": 4
     },
     "phase_context": {
-      "phase": null,
-      "phase_week": 0,
-      "amber_threshold": 2,
-      "modifier_applied": "default"
+      "phase": "Build",
+      "phase_week": 3,
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 1 amber (threshold 2), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
     "alarm_refs": []
   },
   "history": {
-    "available": false,
-    "history_confidence": "low",
-    "note": "No history.json available. Longitudinal analysis limited to current 28-day window."
+    "available": true,
+    "last_generated": "2026-03-09",
+    "age_days": 0,
+    "total_months": 35,
+    "history_confidence": "high"
   },
   "summary": {
     "period_description": "Last 7 days of training (including today)",
@@ -285,40 +287,34 @@
       ]
     },
     "phase_detection": {
-      "phase": null,
-      "confidence": "low",
-      "reason_codes": [
-        "INSUFFICIENT_LOOKBACK",
-        "INSUFFICIENT_DATA"
-      ],
+      "phase": "Build",
+      "confidence": "high",
+      "reason_codes": [],
       "basis": {
         "stream_1": {
-          "ctl_slope": null,
-          "acwr_trend": null,
-          "hard_day_pattern": null,
-          "weeks_available": 0
+          "ctl_slope": 2.7,
+          "acwr_trend": "falling",
+          "hard_day_pattern": 1.5,
+          "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
+          "planned_tss_delta": 2.17,
           "hard_sessions_planned": 5,
           "race_proximity": 5,
-          "next_week_load": null,
+          "next_week_load": 0.58,
           "plan_coverage_current_week": 1.2,
           "plan_coverage_next_week": 0.4
         },
-        "data_quality": "poor",
+        "data_quality": "good",
         "stream_agreement": null
       },
-      "previous_phase": null,
-      "phase_duration_weeks": 0,
+      "previous_phase": "Build",
+      "phase_duration_weeks": 3,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": null,
-    "phase_triggers": [
-      "INSUFFICIENT_LOOKBACK",
-      "INSUFFICIENT_DATA"
-    ],
+    "phase_detected": "Build",
+    "phase_triggers": [],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
       "current_ftp": null,
@@ -340,7 +336,7 @@
     "p_max": 616,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-09T00:51:35.728679",
+    "calculation_timestamp": "2026-03-09T02:54:05.438531",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -731,7 +727,7 @@
   ],
   "planned_workouts": [
     {
-      "id": 97187920,
+      "id": 97308508,
       "date": "2026-03-09",
       "name": "Weekly",
       "type": "TARGET",
@@ -780,8 +776,8 @@
       "name": "Joliet Coffee Run",
       "type": "RACE_C",
       "planned_tss": 300,
-      "duration_hours": 0.2,
-      "duration_formatted": "12m",
+      "duration_hours": 12.0,
+      "duration_formatted": "12h",
       "workout_summary": null,
       "description": ""
     },
@@ -797,7 +793,7 @@
       "description": "Warmup\n- 15m ramp 40-75%\n\nMain Set\n- 315m ramp 56-87%\n\nCooldown\n- 10m ramp 56-40%\n\n[Weekly Plan - Base]"
     },
     {
-      "id": 97187923,
+      "id": 97308509,
       "date": "2026-03-16",
       "name": "Weekly",
       "type": "TARGET",
@@ -819,7 +815,7 @@
       "description_preview": null
     },
     {
-      "id": 97187925,
+      "id": 97308510,
       "date": "2026-03-23",
       "name": "Weekly",
       "type": "TARGET",
@@ -830,7 +826,7 @@
       "description_preview": null
     },
     {
-      "id": 97187974,
+      "id": 97308533,
       "date": "2026-03-23",
       "name": "Recovery Week",
       "type": "NOTE",
@@ -852,7 +848,7 @@
       "description_preview": null
     },
     {
-      "id": 97187927,
+      "id": 97308511,
       "date": "2026-03-30",
       "name": "Weekly",
       "type": "TARGET",
@@ -874,7 +870,7 @@
       "description_preview": null
     },
     {
-      "id": 97187929,
+      "id": 97308512,
       "date": "2026-04-06",
       "name": "Weekly",
       "type": "TARGET",
@@ -885,7 +881,7 @@
       "description_preview": null
     },
     {
-      "id": 97187931,
+      "id": 97308513,
       "date": "2026-04-13",
       "name": "Weekly",
       "type": "TARGET",
@@ -918,7 +914,7 @@
       "description_preview": null
     },
     {
-      "id": 97187933,
+      "id": 97308514,
       "date": "2026-04-20",
       "name": "Weekly",
       "type": "TARGET",
@@ -929,7 +925,7 @@
       "description_preview": null
     },
     {
-      "id": 97187977,
+      "id": 97308534,
       "date": "2026-04-20",
       "name": "Recovery Week",
       "type": "NOTE",
@@ -963,7 +959,7 @@
       "category": "RACE_C",
       "type": "Ride",
       "days_until": 5,
-      "moving_time_seconds": 720,
+      "moving_time_seconds": 43200,
       "distance_meters": 209215.0
     },
     "all_races": [
@@ -973,7 +969,7 @@
         "category": "RACE_C",
         "type": "Ride",
         "days_until": 5,
-        "moving_time_seconds": 720,
+        "moving_time_seconds": 43200,
         "distance_meters": 209215.0
       },
       {
