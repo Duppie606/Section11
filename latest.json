@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-10T22:40:46.885659",
+    "last_updated": "2026-03-10T23:02:23.042463",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -302,7 +302,7 @@
           "race_proximity": 4,
           "next_week_load": 0.73,
           "plan_coverage_current_week": 1.2,
-          "plan_coverage_next_week": 0.4
+          "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -335,7 +335,7 @@
     "p_max": 715,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-10T22:40:46.884857",
+    "calculation_timestamp": "2026-03-10T23:02:23.041661",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -792,6 +792,39 @@
       "description": "Warmup\n- Hey Duppie! Long Fat Max ride awaits. 15m ramp 40-75%\n\nMain Set\n- Endurance 335m 56-75%\n\nCooldown\n- Fantastic endurance, Duppie. Well done. 10m ramp 56-40%\n\n[Weekly Plan - Base]"
     },
     {
+      "id": 97757620,
+      "date": "2026-03-16",
+      "name": "Weekly",
+      "type": "TARGET",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description": ""
+    },
+    {
+      "id": 97757643,
+      "date": "2026-03-16",
+      "name": "Coulee Challenge",
+      "type": "PLAN",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description": "Base phase: aerobic capacity, endurance, volume building"
+    },
+    {
+      "id": 97757646,
+      "date": "2026-03-16",
+      "name": "Recovery Week",
+      "type": "NOTE",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description": "Focus on easier efforts, reduced volume, and allowing your body to adapt to training stress"
+    },
+    {
       "id": 97416528,
       "date": "2026-03-16",
       "name": "IntervalCoach - Aerobic Endurance",
@@ -814,6 +847,17 @@
       "description_preview": null
     },
     {
+      "id": 97757621,
+      "date": "2026-03-23",
+      "name": "Weekly",
+      "type": "TARGET",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description_preview": null
+    },
+    {
       "id": 92558225,
       "date": "2026-03-28",
       "name": "Egyptioan Farms 150k",
@@ -825,6 +869,17 @@
       "description_preview": null
     },
     {
+      "id": 97757622,
+      "date": "2026-03-30",
+      "name": "Weekly",
+      "type": "TARGET",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description_preview": null
+    },
+    {
       "id": 93479373,
       "date": "2026-04-04",
       "name": "200k",
@@ -832,6 +887,39 @@
       "planned_tss": 300,
       "duration_hours": 13.0,
       "duration_formatted": "13h",
+      "workout_summary": null,
+      "description_preview": null
+    },
+    {
+      "id": 97757623,
+      "date": "2026-04-06",
+      "name": "Weekly",
+      "type": "TARGET",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description_preview": null
+    },
+    {
+      "id": 97757647,
+      "date": "2026-04-06",
+      "name": "Recovery Week",
+      "type": "NOTE",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description_preview": "Focus on easier efforts, reduced volume, and allowing your body to adapt to training stress"
+    },
+    {
+      "id": 97757624,
+      "date": "2026-04-13",
+      "name": "Weekly",
+      "type": "TARGET",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
       "workout_summary": null,
       "description_preview": null
     },
@@ -856,6 +944,17 @@
       "duration_formatted": "4h",
       "workout_summary": null,
       "description_preview": null
+    },
+    {
+      "id": 97757625,
+      "date": "2026-04-20",
+      "name": "Weekly",
+      "type": "TARGET",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description_preview": null
     }
   ],
   "workout_summary_stats": {
@@ -863,7 +962,7 @@
     "success": 3,
     "patternA": 3,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
+    "bail_no_workout_doc": 3,
     "bail_no_match": 3
   },
   "weekly_summary": {
