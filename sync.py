@@ -4,6 +4,11 @@ Intervals.icu → GitHub/Local JSON Export
 Exports training data for LLM access.
 Supports both automated GitHub sync and manual local export.
 
+Version 3.78 - Bug fix: weekly history aligned to configured week start (was hardcoded Monday)
+  - _build_weekly_tier respects week_start_day setting; fixes Sunday-start week misalignment
+  - Update checker: removed manifest.json fallback from _check_for_updates(), changelog.json only
+  - Log rotation: sync.log trimmed to 200 lines when over 1MB
+
 Version 3.77 - Hash-based manifest for --update (all repo files tracked, no manual version bumps)
   - --generate-manifest: maintainer command, walks repo, hashes all files, writes manifest.json
   - --update: compares SHA256 hashes instead of version strings, detects new files automatically
@@ -32,45 +37,13 @@ Version 3.75 - Working directory awareness + local setup
   - --lockfile flag: prevent overlapping runs for automated timers (stale detection via PID + 10-min age)
   - Update notifications: manifest.json preferred, changelog.json fallback (backward compatible)
   - Bootstrap flow: python sync.py --setup → python sync.py --init → use section11/examples/sync.py going forward
+  
+Version 3.73 - Phase detection: Stream 2 windows aligned to training week, configurable week start (config/env/CLI)
+Version 3.72 - Readiness Decision: pre-computed go/modify/skip via P0-P3 priority ladder, 7 signals, phase modifiers
+Version 3.71 - HRRc integration: 7d/28d aggregate trend in capability namespace (display only)
+Version 3.7 - Phase detection v2: dual-stream (retrospective + prospective), 8 states, confidence scoring, hysteresis
 
-Version 3.73 - Phase detection: week-aligned prospective windows
-  - Stream 2 windows aligned to training week instead of rolling 7-day from today
-  - Fixes mid-week deload misclassification: rolling window leaked next week's build sessions
-  - Configurable week start: .sync_config.json "week_start", WEEK_START env var, or --week-start CLI
-  - Default Monday (ISO). Set once in config, never think about it again
-  - Current week window: today → week end. Next week: next full training week
-  - Planned TSS delta projected to full-week equivalent from remaining days
-  - Hard sessions and plan coverage scoped to current week remainder only
-
-Version 3.72 - Readiness Decision (AAS formalization)
-  - Pre-computed go/modify/skip via P0-P3 priority ladder (safety → overload → fatigue → green light)
-  - 7 signals evaluated: HRV, RHR, Sleep, TSB, ACWR, Feel, RI — green/amber/red/unavailable
-  - Phase modifiers: Build loosens (3 amber), Taper/Race week tighten (1 amber), others default (2)
-  - Structured modification output: triggers + adjustment directions (intensity/volume/cap_zone)
-  - Wires into existing tier-1 alerts (P0/P1) — no duplication
-  - Top-level readiness_decision object in output JSON, alongside alerts
-
-Version 3.71 - HRRc (heart rate recovery) integration
-  - Added icu_hrr (HRRc) field to formatted activity output as "hrrc"
-  - Added _calculate_hrrc_trend(): 7d/28d aggregate HRRc in capability namespace
-  - Qualifying: icu_hrr not null, min 1 session/7d, min 3 sessions/28d
-  - Trend: >10% difference = improving/declining (conservative for field noise)
-  - Display only — not wired into readiness_decision signals
-
-Version 3.7 - Phase detection v2: dual-stream architecture (retrospective + prospective)
-  - Stream 1: 4-week lookback from weekly_180d — CTL slope, ACWR trend, hard-day density, monotony
-  - Stream 2: planned workouts + race calendar — planned TSS delta, hard sessions, race proximity
-  - 8 phase states: Build/Base/Peak/Taper/Deload/Recovery/Overreached/null
-  - Confidence scoring (high/medium/low), reason codes, hysteresis from previous_phase
-  - weekly_180d enriched: per-week phase_detected, acwr, monotony, intensity_basis_breakdown
-  - Overreached false-positive fixes, Peak/Deload gate refinements
-
-Version 3.6.5 - Real IDs + Coach Notes
-  - Activity/event IDs always real (opaque keys, not PII). Athlete ID still REDACTED when anonymized
-  - coach_notes array: NOTE: lines parsed from activity/event descriptions
-  - chat_notes array: fetches activity messages endpoint when has_messages is true
-  - Enables push.py v0.3 annotate round-trip (write via push.py, read via sync.py)
-
+Version 3.6.5 - Real activity/event IDs, coach_notes + chat_notes arrays, push.py annotate round-trip
 Version 3.6.4 - READ_THIS_FIRST display_formatting instruction, report template XhYm alignment
 Version 3.6.3 - Human-readable _formatted fields (duration, sleep, training hours), floored to minutes
 Version 3.6.2 - Workout summary parser (Pattern A/B), tiered planned workout detail (0-7d full, 8-42d skeleton)
@@ -113,7 +86,7 @@ class IntervalsSync:
     HISTORY_FILE = "history.json"
     UPSTREAM_REPO = "CrankAddict/section-11"
     CHANGELOG_FILE = "changelog.json"
-    VERSION = "3.77"
+    VERSION = "3.78"
 
     # Sport family mapping for per-sport monotony calculation
     # Multi-sport athletes get inflated total monotony when cross-training
@@ -171,6 +144,41 @@ class IntervalsSync:
         response = requests.get(url, headers=headers, params=params)
         response.raise_for_status()
         return response.json()
+
+    @staticmethod
+    def _normalize_events_payload(payload) -> List[Dict]:
+        """Normalize events endpoint payload to a list of event dicts."""
+        if isinstance(payload, list):
+            return [e for e in payload if isinstance(e, dict)]
+        if isinstance(payload, dict):
+            if isinstance(payload.get("events"), list):
+                return [e for e in payload["events"] if isinstance(e, dict)]
+            if isinstance(payload.get("items"), list):
+                return [e for e in payload["items"] if isinstance(e, dict)]
+            return [payload]
+        return []
+
+    @staticmethod
+    def _dedupe_events(events: List[Dict]) -> List[Dict]:
+        """Deduplicate events by id; fallback to date+name+category signature."""
+        deduped_events = []
+        seen_event_keys = set()
+
+        for evt in events:
+            evt_id = evt.get("id")
+            if evt_id is not None:
+                event_key = f"id:{evt_id}"
+            else:
+                event_key = (
+                    f"anon:{(evt.get('start_date_local') or '')[:10]}|"
+                    f"{evt.get('name') or ''}|{evt.get('category') or ''}"
+                )
+            if event_key in seen_event_keys:
+                continue
+            seen_event_keys.add(event_key)
+            deduped_events.append(evt)
+
+        return deduped_events
 
     def _get_activity_messages(self, activity_id: str) -> List[str]:
         """Fetch messages/notes for a completed activity. Returns list of text strings."""
@@ -454,12 +462,41 @@ class IntervalsSync:
         print("Fetching planned workouts (past + future for Consistency Index + race calendar)...")
         oldest_events = (datetime.now() - timedelta(days=days_back - 1)).strftime("%Y-%m-%d")
         newest_ahead = (datetime.now() + timedelta(days=90)).strftime("%Y-%m-%d")
-        events = self._intervals_get("events", {"oldest": oldest_events, "newest": newest_ahead, "resolve": "true"})
+        events = self._normalize_events_payload(
+            self._intervals_get("events", {"oldest": oldest_events, "newest": newest_ahead, "resolve": "true"})
+        )
+
+        # Dedicated TARGET query for planned_tss (today -> +365 days)
+        # Uses events endpoint with explicit oldest/newest window per requirement.
+        target_events_oldest = today
+        target_events_newest = (datetime.now() + timedelta(days=365)).strftime("%Y-%m-%d")
+        target_events = self._normalize_events_payload(
+            self._intervals_get(
+                "events",
+                {"oldest": target_events_oldest, "newest": target_events_newest, "resolve": "true"}
+            )
+        )
+        target_events = [e for e in target_events if e.get("category") == "TARGET"]
+        if self.debug:
+            print(f"  TARGET events found (today to +365d): {len(target_events)}")
         
         # Split events into past (for consistency), near future (for planned workouts display), and all future (for race calendar)
         past_events = [e for e in events if e.get("start_date_local", "")[:10] <= today]
         future_events = [e for e in events if e.get("start_date_local", "")[:10] >= today]
-        near_future_events = [e for e in future_events if e.get("start_date_local", "")[:10] <= (datetime.now() + timedelta(days=42)).strftime("%Y-%m-%d")]
+        near_future_cutoff = (datetime.now() + timedelta(days=42)).strftime("%Y-%m-%d")
+        near_future_events = [e for e in future_events if e.get("start_date_local", "")[:10] <= near_future_cutoff]
+
+        # Exclude planning/meta-only categories from planned_workouts output.
+        # Keep workout-like categories and TARGET items.
+        planned_excluded_categories = {"PLAN", "NOTE"}
+        near_future_events = [
+            e for e in near_future_events if (e.get("category") or "") not in planned_excluded_categories
+        ]
+
+        # For every record from the dedicated endpoint: include category TARGET in planned_workouts.
+        # Merge raw events first, then format once (faster and preserves summary stats).
+        combined_planned_events = list(target_events) + list(near_future_events)
+        deduped_planned_events = self._dedupe_events(combined_planned_events)
         
         # Smart fitness metrics: same logic for CTL, ATL, TSB, and ramp rate
         # API values include planned workouts → inflated if not yet completed
@@ -512,7 +549,15 @@ class IntervalsSync:
         )
         
         # Format planned workouts — used by both phase detection and output
-        formatted_planned_workouts = self._format_events(near_future_events, anonymize, today=today)
+        formatted_planned_workouts = self._format_events(
+            deduped_planned_events,
+            anonymize,
+            today=today
+        )
+        formatted_planned_workouts = sorted(
+            formatted_planned_workouts,
+            key=lambda w: (w.get("date") or "9999-12-31", str(w.get("id") or ""))
+        )
         
         # Calculate derived metrics for Section 11 compliance
         print("Calculating derived metrics...")
@@ -3559,10 +3604,11 @@ class IntervalsSync:
         
         # Calculate weeks
         start_date = now - timedelta(days=days)
-        # Align to Monday
-        start_monday = start_date - timedelta(days=start_date.weekday())
+        # Align to configured week start day
+        days_since_week_start = (start_date.weekday() - self.week_start_day) % 7
+        start_aligned = start_date - timedelta(days=days_since_week_start)
         
-        current = start_monday
+        current = start_aligned
         while current < now:
             week_end = current + timedelta(days=6)
             if week_end > now:
@@ -4016,13 +4062,9 @@ class IntervalsSync:
             "Accept": "application/vnd.github+json"
         }
         
-        # Try manifest.json first, fall back to changelog.json
-        manifest = _fetch_upstream_manifest()
-        
-        if manifest and manifest.get("files"):
-            self._check_updates_via_manifest(manifest, headers)
-        else:
-            self._check_updates_via_changelog(headers)
+        # GitHub Issues use changelog.json for human-readable release notes
+        # (manifest.json is for local --update only)
+        self._check_updates_via_changelog(headers)
     
     def _check_updates_via_manifest(self, manifest, headers):
         """Create a GitHub Issue if manifest file hashes have changed."""
@@ -4695,7 +4737,7 @@ class IntervalsSync:
             return self._merge_interval_blocks(parts)
         except Exception:
             return None
-    
+
     def _try_alternating_block(self, step_data: List, start: int) -> tuple:
         """
         Try to consume an alternating work/rest block starting at 'start'.
@@ -4768,7 +4810,7 @@ class IntervalsSync:
         except Exception:
             return None
     
-    def _format_events(self, events: List[Dict], anonymize: bool = False, today: str = None) -> List[Dict]:
+    def _format_events(self, events: List[Dict], anonymize: bool = False, today: Optional[str] = None) -> List[Dict]:
         """
         Format planned workouts with workout_summary and tiered detail (v3.6.2).
         
@@ -4831,16 +4873,29 @@ class IntervalsSync:
                     clean_desc_lines.append(line)
             clean_desc = "\n".join(clean_desc_lines).strip()
 
+            duration_hours = round((evt.get("moving_time") or 0) / 3600, 2)
+            planned_tss = evt.get("load_target")
+
             entry = {
                 "id": evt.get("id", f"unknown_{i+1}"),
                 "date": evt_date,
                 "name": evt.get("name", ""),
                 "type": evt.get("category", ""),
-                "planned_tss": evt.get("icu_training_load"),
-                "duration_hours": round((evt.get("moving_time") or 0) / 3600, 2),
+                "planned_tss": planned_tss,
+                "duration_hours": duration_hours,
+                "time_target": evt.get("moving_time"),
                 "duration_formatted": self._format_duration(int(evt.get("moving_time") or 0)),
-                "workout_summary": summary
+                "workout_summary": summary,
+                "distance_target": evt.get("distance_target", evt.get("distance"))
             }
+
+            if evt.get("category") == "TARGET":
+                raw_time_target = evt.get("time_target")
+                entry["time_target"] = raw_time_target
+                if isinstance(raw_time_target, (int, float)) and raw_time_target >= 0:
+                    entry["duration_hours"] = round(raw_time_target / 3600, 2)
+                    # Match planned duration display style (e.g., 6h30m) for TARGET time_target.
+                    entry["duration_formatted"] = self._format_duration(int(raw_time_target) // 60 * 60)
 
             if coach_notes:
                 entry["coach_notes"] = coach_notes
@@ -5330,7 +5385,7 @@ class IntervalsSync:
 
 # === Local Setup & Update Helpers ===
 
-SECTION11_REPO_RAW = "https://raw.githubusercontent.com/CrankAddict/section-11/main"
+SECTION11_REPO_RAW = "https://raw.githubusercontent.com/Duppie606/section-11/main"
 
 # Directories/files to exclude from manifest generation
 _MANIFEST_EXCLUDE_DIRS = {".git", ".github", "__pycache__", "node_modules"}
@@ -5561,7 +5616,7 @@ def do_update():
     # Guard: section11/ must exist
     if not target_dir.exists():
         print("Section 11: section11/ not found in this directory")
-        print("   Run --init first to set up the local workspace")
+        print("   Run --init first to set up the local data directory")
         return
     
     # Fetch manifest.json from upstream
