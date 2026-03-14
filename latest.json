@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-14T13:12:17.735180",
+    "last_updated": "2026-03-14T13:55:31.377268",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -49,7 +49,7 @@
       },
       "sleep": {
         "status": "green",
-        "hours": 8.84,
+        "hours": 8.83,
         "quality": 1
       },
       "acwr": {
@@ -155,11 +155,11 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 87.319,
+      "weight_kg": 87.316635,
       "resting_hr": 50,
       "hrv": 40.0,
       "sleep_quality": 1,
-      "sleep_hours": 8.84,
+      "sleep_hours": 8.83,
       "sleep_formatted": "8h50m"
     }
   },
@@ -311,7 +311,7 @@
         "stream_2": {
           "planned_tss_delta": null,
           "hard_sessions_planned": 0,
-          "race_proximity": 7,
+          "race_proximity": 14,
           "next_week_load": 1.64,
           "plan_coverage_current_week": 0.4,
           "plan_coverage_next_week": 1.2
@@ -347,7 +347,7 @@
     "p_max": 715,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-14T13:12:17.734363",
+    "calculation_timestamp": "2026-03-14T13:55:31.376416",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -617,17 +617,17 @@
     },
     {
       "date": "2026-03-14",
-      "weight_kg": 87.319,
+      "weight_kg": 87.316635,
       "resting_hr": 50,
       "hrv_rmssd": 40.0,
       "hrv_sdnn": null,
-      "sleep_hours": 8.84,
+      "sleep_hours": 8.83,
       "sleep_formatted": "8h50m",
       "sleep_quality": 1,
       "sleep_score": 90.0,
       "mental_energy": null,
-      "fatigue": 2,
-      "soreness": 2,
+      "fatigue": 4,
+      "soreness": 4,
       "avg_sleeping_hr": null,
       "vo2max": null
     }
@@ -715,7 +715,7 @@
       "id": 92557670,
       "date": "2026-03-21",
       "name": "Crown Point Coffee Run 125k",
-      "type": "RACE_C",
+      "type": "WORKOUT",
       "planned_tss": null,
       "duration_hours": 5.5,
       "time_target": 19800,
@@ -1094,24 +1094,15 @@
   },
   "race_calendar": {
     "next_race": {
-      "name": "Crown Point Coffee Run 125k",
-      "date": "2026-03-21",
+      "name": "Egyptioan Farms 150k",
+      "date": "2026-03-28",
       "category": "RACE_C",
       "type": "Ride",
-      "days_until": 7,
-      "moving_time_seconds": 19800,
-      "distance_meters": 125529.0
+      "days_until": 14,
+      "moving_time_seconds": 23400,
+      "distance_meters": 152888.0
     },
     "all_races": [
-      {
-        "name": "Crown Point Coffee Run 125k",
-        "date": "2026-03-21",
-        "category": "RACE_C",
-        "type": "Ride",
-        "days_until": 7,
-        "moving_time_seconds": 19800,
-        "distance_meters": 125529.0
-      },
       {
         "name": "Egyptioan Farms 150k",
         "date": "2026-03-28",
