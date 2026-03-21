@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-21T21:58:34.436693",
+    "last_updated": "2026-03-21T22:36:52.464889",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -345,7 +345,7 @@
     "p_max": 715,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 39.0,
-    "calculation_timestamp": "2026-03-21T21:58:34.435830",
+    "calculation_timestamp": "2026-03-21T22:36:52.464033",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -889,7 +889,7 @@
       "duration_formatted": "1h",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Easy spin 10m 50% 85rpm\n\nMain Set\n- Aerobic flush 40m freeride\n\nCooldown\n- Wind down 10m 50% 85rpm"
+      "description": "Warmup\n- Easy spin 10m 50% 85rpm\n\nMain Set\n- Aerobic flush 40m 50% freeride\n\nCooldown\n- Wind down 10m 50% 85rpm"
     },
     {
       "id": 97757621,
@@ -915,7 +915,7 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Endurance plus pickups are here 14m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 17m 65-67% 85rpm\n- Build 17m 67-70% 88rpm\n- Upper Z2 17m 70-74% 90rpm\n- Cruise 16m 74-70% 88rpm\n\nCooldown\n- Awesome work, Duppie! Spin easy now 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+      "description": "Warmup\n- Hey Duppie! Endurance plus pickups are here 14m ramp 45-60% 85rpm\n\nMain Set\n- Settle In 17m 60% 85rpm\n- Build 17m 62% 88rpm\n- Upper Z2 17m 65% 90rpm\n- Cruise 16m 74-60% 88rpm\n\nCooldown\n- Awesome work, Duppie! Spin easy now 9m ramp 60-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 99459238,
