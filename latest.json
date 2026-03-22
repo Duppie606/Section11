@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-22T11:01:42.316354",
+    "last_updated": "2026-03-22T11:39:14.012375",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -36,21 +36,21 @@
     "priority": 1,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 40.3,
-        "delta_pct": null
+        "status": "amber",
+        "value": 32.0,
+        "baseline_7d": 39.1,
+        "delta_pct": -18.2
       },
       "rhr": {
-        "status": "amber",
-        "value": 56,
-        "baseline_7d": 52.7,
-        "delta_bpm": 3.3
+        "status": "green",
+        "value": 53,
+        "baseline_7d": 52.3,
+        "delta_bpm": 0.7
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "green",
+        "hours": 9.0,
+        "quality": 2
       },
       "acwr": {
         "status": "amber",
@@ -61,15 +61,15 @@
         "value": 1
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 0.81
       }
     },
     "signal_summary": {
-      "green": 1,
+      "green": 4,
       "amber": 2,
       "red": 0,
-      "unavailable": 3
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -88,7 +88,7 @@
         "cap_zone": "Z2"
       }
     },
-    "reason": "P1 acute overload (modify). ACWR 1.33 > 1.3.",
+    "reason": "P1 acute overload (modify). ACWR 1.33 > 1.3; TSB -28.14 < -25 with HRV -18.2% below baseline.",
     "alarm_refs": []
   },
   "history": {
@@ -161,21 +161,21 @@
     },
     "current_metrics": {
       "weight_kg": 87.309,
-      "resting_hr": 56,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "resting_hr": 53,
+      "hrv": 32.0,
+      "sleep_quality": 2,
+      "sleep_hours": 9.0,
+      "sleep_formatted": "9h"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 40.3,
-    "rhr_baseline_7d": 52.7,
-    "hrv_baseline_28d": 41.9,
-    "rhr_baseline_28d": 52.5,
-    "latest_hrv": null,
-    "latest_rhr": 56,
+    "recovery_index": 0.81,
+    "hrv_baseline_7d": 39.1,
+    "rhr_baseline_7d": 52.3,
+    "hrv_baseline_28d": 41.5,
+    "rhr_baseline_28d": 52.4,
+    "latest_hrv": 32.0,
+    "latest_rhr": 53,
     "acwr": 1.33,
     "acwr_interpretation": "caution",
     "monotony": 0.7,
@@ -187,7 +187,7 @@
     "multi_sport_detected": false,
     "strain": 359.0,
     "stress_tolerance": 5.1,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 6.3,
     "tss_7d_total": 513.0,
     "tss_28d_total": 1542.0,
     "zone_distribution_7d": {
@@ -353,9 +353,9 @@
     "p_max": 715,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-22T11:01:42.315492",
+    "calculation_timestamp": "2026-03-22T11:39:14.011502",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 6,
       "activities_28d": 22,
@@ -780,16 +780,16 @@
     {
       "date": "2026-03-22",
       "weight_kg": null,
-      "resting_hr": 56,
-      "hrv_rmssd": null,
+      "resting_hr": 53,
+      "hrv_rmssd": 32.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 9.0,
+      "sleep_formatted": "9h",
+      "sleep_quality": 2,
+      "sleep_score": 86.0,
       "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
+      "fatigue": 3,
+      "soreness": 2,
       "avg_sleeping_hr": null,
       "vo2max": null
     }
@@ -1199,8 +1199,8 @@
     "total_training_formatted": "10h28m",
     "total_tss": 513,
     "activities_count": 6,
-    "avg_hrv": 40.3,
-    "avg_resting_hr": 52.7
+    "avg_hrv": 39.1,
+    "avg_resting_hr": 52.3
   },
   "race_calendar": {
     "next_race": {
