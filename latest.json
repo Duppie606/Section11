@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-23T12:04:22.104798",
+    "last_updated": "2026-03-23T13:51:22.617235",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -145,7 +145,7 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 86.93,
+      "weight_kg": 87.55,
       "resting_hr": 50,
       "hrv": 45.0,
       "sleep_quality": 1,
@@ -337,7 +337,7 @@
     "p_max": 715,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-23T12:04:22.103894",
+    "calculation_timestamp": "2026-03-23T13:51:22.616338",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -711,7 +711,7 @@
     },
     {
       "date": "2026-03-23",
-      "weight_kg": null,
+      "weight_kg": 87.55,
       "resting_hr": 50,
       "hrv_rmssd": 45.0,
       "hrv_sdnn": null,
@@ -754,9 +754,9 @@
       "description": "Warmup\n- Hey Duppie! Endurance plus pickups are here 14m ramp 45-60% 85rpm\n\nMain Set\n- Settle In 17m 60% 85rpm\n- Build 17m 62% 88rpm\n- Upper Z2 17m 65% 90rpm\n- Cruise 16m 74-60% 88rpm\n\nCooldown\n- Awesome work, Duppie! Spin easy now 9m ramp 60-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
-      "id": 99459238,
+      "id": 100218356,
       "date": "2026-03-26",
-      "name": "IntervalCoach - Endurance Cruise",
+      "name": "IntervalCoach - Endurance Build",
       "type": "WORKOUT",
       "planned_tss": null,
       "duration_hours": 1.5,
@@ -764,7 +764,7 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Progressive aerobic journey awaits. 14m ramp 45-75% 85rpm\n\nMain Set\n- Z2 Low 22m 65% 85rpm\n- Z2 Mid 22m 69% 88rpm\n- Z2 Upper 23m 73% 90rpm\n\nCooldown\n- Fantastic ride, Duppie! Recover well. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+      "description": "Warmup\n- Hey Duppie! Endurance plus pickups are here 14m ramp 45-60% 85rpm\n\nMain Set\n- Settle In 17m 60% 85rpm\n- Build 17m 62% 88rpm\n- Upper Z2 17m 65% 90rpm\n- Cruise 16m 74-60% 88rpm\n\nCooldown\n- Awesome work, Duppie! Spin easy now 9m ramp 60-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 92558225,
@@ -785,12 +785,12 @@
       "name": "IntervalCoach - Endurance Build",
       "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 3.27,
-      "time_target": 11760,
-      "duration_formatted": "3h16m",
+      "duration_hours": 2.57,
+      "time_target": 9240,
+      "duration_formatted": "2h34m",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Endurance and cadence awaits. 15m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 43m 65% 85rpm\n- Build 43m 67% 88rpm\n- Upper Z2 43m 70-74% 90rpm\n- Cruise 42m 74-70% 88rpm\n\nCooldown\n- Fantastic work, Duppie! Enjoy the spin. 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+      "description": "Warmup\n- Hey Duppie! Endurance and cadence awaits. 15m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 43m 65% 85rpm\n- Build 43m 67% 88rpm\n- Upper Z2 43m 70-74% 90rpm\n\nCooldown\n- Fantastic work, Duppie! Enjoy the spin. 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 100203903,
