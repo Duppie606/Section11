@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-24T11:58:23.675594",
+    "last_updated": "2026-03-24T13:44:48.826467",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -32,10 +32,10 @@
         "delta_pct": null
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 52.2,
-        "delta_bpm": null
+        "status": "green",
+        "value": 51,
+        "baseline_7d": 52,
+        "delta_bpm": -1
       },
       "sleep": {
         "status": "unavailable",
@@ -60,10 +60,10 @@
       }
     },
     "signal_summary": {
-      "green": 3,
+      "green": 4,
       "amber": 0,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 3
     },
     "phase_context": {
       "phase": "Build",
@@ -73,7 +73,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 4 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -146,7 +146,7 @@
     },
     "current_metrics": {
       "weight_kg": 87.543434,
-      "resting_hr": 50,
+      "resting_hr": 51,
       "hrv": null,
       "sleep_quality": null,
       "sleep_hours": null,
@@ -156,11 +156,11 @@
   "derived_metrics": {
     "recovery_index": null,
     "hrv_baseline_7d": 41.2,
-    "rhr_baseline_7d": 52.2,
+    "rhr_baseline_7d": 52,
     "hrv_baseline_28d": 41.2,
     "rhr_baseline_28d": 52.3,
     "latest_hrv": null,
-    "latest_rhr": null,
+    "latest_rhr": 51,
     "acwr": 1.24,
     "acwr_interpretation": "optimal",
     "monotony": 0.67,
@@ -301,8 +301,8 @@
         },
         "stream_2": {
           "planned_tss_delta": null,
-          "hard_sessions_planned": 3,
-          "race_proximity": 4,
+          "hard_sessions_planned": 2,
+          "race_proximity": 11,
           "next_week_load": 1.55,
           "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 0.6
@@ -338,10 +338,10 @@
     "p_max": 715,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-24T11:58:23.674748",
+    "calculation_timestamp": "2026-03-24T13:44:48.825646",
     "data_quality": {
       "hrv_data_points": 6,
-      "rhr_data_points": 6,
+      "rhr_data_points": 7,
       "activities_7d": 6,
       "activities_28d": 22,
       "planned_workouts_7d": 9,
@@ -765,7 +765,7 @@
     {
       "date": "2026-03-24",
       "weight_kg": null,
-      "resting_hr": null,
+      "resting_hr": 51,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
       "sleep_hours": null,
@@ -796,12 +796,12 @@
     {
       "id": 92558225,
       "date": "2026-03-28",
-      "name": "Egyptioan Farms 150k",
-      "type": "RACE_C",
+      "name": "Joliet Coffee Run pre-ride",
+      "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 6.5,
-      "time_target": 23400,
-      "duration_formatted": "6h30m",
+      "duration_hours": 8.5,
+      "time_target": 30600,
+      "duration_formatted": "8h30m",
       "workout_summary": null,
       "distance_target": null,
       "description": ""
@@ -1172,28 +1172,19 @@
     "total_tss": 488,
     "activities_count": 6,
     "avg_hrv": 41.2,
-    "avg_resting_hr": 52.2
+    "avg_resting_hr": 52.0
   },
   "race_calendar": {
     "next_race": {
-      "name": "Egyptioan Farms 150k",
-      "date": "2026-03-28",
+      "name": "200k",
+      "date": "2026-04-04",
       "category": "RACE_C",
       "type": "Ride",
-      "days_until": 4,
-      "moving_time_seconds": 23400,
-      "distance_meters": 152888.0
+      "days_until": 11,
+      "moving_time_seconds": 46800,
+      "distance_meters": 202778.0
     },
     "all_races": [
-      {
-        "name": "Egyptioan Farms 150k",
-        "date": "2026-03-28",
-        "category": "RACE_C",
-        "type": "Ride",
-        "days_until": 4,
-        "moving_time_seconds": 23400,
-        "distance_meters": 152888.0
-      },
       {
         "name": "200k",
         "date": "2026-04-04",
