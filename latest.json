@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-24T18:31:53.832920",
+    "last_updated": "2026-03-24T19:42:22.488782",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -338,7 +338,7 @@
     "p_max": 715,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-24T18:31:53.832103",
+    "calculation_timestamp": "2026-03-24T19:42:22.487927",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -794,21 +794,8 @@
       "description": "Warmup\n- Hey Duppie! Endurance plus pickups are here 14m ramp 45-60% 85rpm\n\nMain Set\n- Settle In 17m 60% 85rpm\n- Build 17m 62% 88rpm\n- Upper Z2 17m 65% 90rpm\n- Cruise 16m 74-60% 88rpm\n\nCooldown\n- Awesome work, Duppie! Spin easy now 9m ramp 60-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
-      "id": 92558225,
-      "date": "2026-03-28",
-      "name": "Joliet Coffee Run pre-ride",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 8.5,
-      "time_target": 30600,
-      "duration_formatted": "8h30m",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": ""
-    },
-    {
       "id": 99938800,
-      "date": "2026-03-29",
+      "date": "2026-03-28",
       "name": "IntervalCoach - Endurance Build",
       "type": "WORKOUT",
       "planned_tss": null,
@@ -818,6 +805,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": "Warmup\n- Hey Duppie! Endurance and cadence awaits. 15m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 43m 65% 85rpm\n- Build 43m 67% 88rpm\n- Upper Z2 43m 70-74% 90rpm\n\nCooldown\n- Fantastic work, Duppie! Enjoy the spin. 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+    },
+    {
+      "id": 92558225,
+      "date": "2026-03-29",
+      "name": "100k Perm",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 4.0,
+      "time_target": 14400,
+      "duration_formatted": "4h",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": ""
     },
     {
       "id": 100203903,
@@ -869,6 +869,19 @@
       "duration_formatted": "9h4m",
       "workout_summary": null,
       "distance_target": 211670.0,
+      "description_preview": null
+    },
+    {
+      "id": 100495710,
+      "date": "2026-04-11",
+      "name": "200k",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 13.0,
+      "time_target": 46800,
+      "duration_formatted": "13h",
+      "workout_summary": null,
+      "distance_target": null,
       "description_preview": null
     },
     {
