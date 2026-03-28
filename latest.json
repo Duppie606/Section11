@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-28T17:35:46.562073",
+    "last_updated": "2026-03-28T18:01:41.526801",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -354,7 +354,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-28T17:35:46.561201",
+    "calculation_timestamp": "2026-03-28T18:01:41.525908",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -716,21 +716,8 @@
       "description": ""
     },
     {
-      "id": 100633185,
-      "date": "2026-04-01",
-      "name": "IntervalCoach - Endurance Build",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.0,
-      "time_target": 3600,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": "Warmup\n- Hey Duppie, endurance and spin-ups await! 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Fantastic effort, enjoy the recovery spin 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
-    },
-    {
       "id": 100765653,
-      "date": "2026-04-02",
+      "date": "2026-04-01",
       "name": "IntervalCoach - Fartlek Endurance",
       "type": "WORKOUT",
       "planned_tss": null,
@@ -740,6 +727,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": "Warmup\n- Hey Duppie! Base building Fartlek today. 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 1 9m 78-90% 85rpm\n- Fartlek Surge 1 1m 91-95% 95rpm\n- Endurance 2 8m 78-90% 85rpm\n- Fartlek Surge 2 2m 95% 100rpm\n- Endurance 3 8m 78-90% 85rpm\n- Fartlek Surge 3 3m 91-95% 95rpm\n- Endurance 4 8m 78-90% 85rpm\n- Fartlek Surge 4 2m 95% 100rpm\n- Endurance 5 8m 78-90% 85rpm\n- Fartlek Surge 5 1m 91-95% 95rpm\n- Endurance 6 8m 78-90% 85rpm\n- Fartlek Surge 6 1m 95% 100rpm\n- Endurance 7 8m 78-90% 85rpm\n\nCooldown\n- Awesome job, Duppie. Recover well! 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+    },
+    {
+      "id": 100633185,
+      "date": "2026-04-03",
+      "name": "IntervalCoach - Endurance Build",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "time_target": 3600,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie, endurance and spin-ups await! 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Fantastic effort, enjoy the recovery spin 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 93479373,
