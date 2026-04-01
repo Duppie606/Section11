@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-01T14:06:19.865764",
+    "last_updated": "2026-04-01T15:43:44.805872",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -349,7 +349,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-01T14:06:19.864950",
+    "calculation_timestamp": "2026-04-01T15:43:44.804980",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -541,8 +541,8 @@
       "efficiency_factor": null,
       "hrrc": null,
       "elevation_m": 0.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 1,
+      "rpe": 1,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 1545,
@@ -1232,7 +1232,7 @@
         "category": "RACE_C",
         "type": "Ride",
         "days_until": 87,
-        "moving_time_seconds": 50400,
+        "moving_time_seconds": 64800,
         "distance_meters": 299338.0
       }
     ],
