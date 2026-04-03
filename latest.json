@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-03T20:00:30.494392",
+    "last_updated": "2026-04-03T20:54:07.539957",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -349,7 +349,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-03T20:00:30.493525",
+    "calculation_timestamp": "2026-04-03T20:54:07.539077",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -822,7 +822,7 @@
       "duration_formatted": "1h",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie, endurance and spin-ups await! 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Fantastic effort, enjoy the recovery spin 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+      "description": "Warmup\n- Hey Duppie, endurance and spin-ups await! 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 69% 90rpm\n- Cruise 12m 71% 88rpm\n\nCooldown\n- Fantastic effort, enjoy the recovery spin 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 93479373,
