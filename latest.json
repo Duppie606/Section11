@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-04T14:53:14.352381",
+    "last_updated": "2026-04-04T15:38:08.197468",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -44,7 +44,7 @@
       },
       "acwr": {
         "status": "green",
-        "value": 1.1
+        "value": 1.11
       },
       "feel": {
         "status": "green",
@@ -56,7 +56,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -2.4
+        "value": -2.0
       }
     },
     "signal_summary": {
@@ -111,10 +111,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 43.17,
-      "atl": 45.52,
-      "tsb": -2.35,
-      "ramp_rate": 2.47,
+      "ctl": 42.93,
+      "atl": 44.93,
+      "tsb": -2.0,
+      "ramp_rate": 2.23,
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
@@ -167,7 +167,7 @@
     "rhr_baseline_28d": 51.5,
     "latest_hrv": 44.0,
     "latest_rhr": 53,
-    "acwr": 1.1,
+    "acwr": 1.11,
     "acwr_interpretation": "optimal",
     "monotony": 0.85,
     "monotony_interpretation": "normal (primary sport 0.81, total 0.85 inflated by multi-sport)",
@@ -180,7 +180,7 @@
     "stress_tolerance": 4.0,
     "load_recovery_ratio": 3.9,
     "tss_7d_total": 400.0,
-    "tss_28d_total": 1457.0,
+    "tss_28d_total": 1445.0,
     "zone_distribution_7d": {
       "z1_hours": 3.43,
       "z2_hours": 5.33,
@@ -218,22 +218,22 @@
       "sport": "cycling"
     },
     "seiler_tid_28d": {
-      "z1_seconds": 99690,
+      "z1_seconds": 96449,
       "z2_seconds": 11125,
       "z3_seconds": 7812,
-      "z1_pct": 84.0,
-      "z2_pct": 9.4,
-      "z3_pct": 6.6,
+      "z1_pct": 83.6,
+      "z2_pct": 9.6,
+      "z3_pct": 6.8,
       "polarization_index": null,
       "classification": "Pyramidal"
     },
     "seiler_tid_28d_primary": {
-      "z1_seconds": 95275,
+      "z1_seconds": 92034,
       "z2_seconds": 11125,
       "z3_seconds": 7812,
-      "z1_pct": 83.4,
-      "z2_pct": 9.7,
-      "z3_pct": 6.8,
+      "z1_pct": 82.9,
+      "z2_pct": 10.0,
+      "z3_pct": 7.0,
       "polarization_index": null,
       "classification": "Pyramidal",
       "sport": "cycling"
@@ -345,12 +345,12 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-04T14:53:14.351328",
+    "calculation_timestamp": "2026-04-04T15:38:08.196595",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 6,
-      "activities_28d": 21,
+      "activities_28d": 19,
       "planned_workouts_7d": 6,
       "ftp_history_days": {
         "indoor": 0,
@@ -441,8 +441,8 @@
       "efficiency_factor": null,
       "hrrc": null,
       "elevation_m": 0.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 1,
+      "rpe": 1,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 1080,
@@ -589,8 +589,8 @@
       "efficiency_factor": null,
       "hrrc": null,
       "elevation_m": 8.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 1,
+      "rpe": 3,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 4415,
@@ -626,7 +626,7 @@
       "wind_speed": 5.799021,
       "work_kj": 1843.0,
       "calories": 2237,
-      "carbs_used": 414,
+      "carbs_used": 418,
       "carbs_ingested": 400,
       "variability_index": 1.0948275,
       "decoupling": 4.3164988,
