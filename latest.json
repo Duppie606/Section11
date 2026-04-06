@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-06T20:24:30.403935",
+    "last_updated": "2026-04-06T21:06:24.173869",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -305,7 +305,7 @@
           "hard_sessions_planned": 3,
           "race_proximity": 12,
           "next_week_load": 1.85,
-          "plan_coverage_current_week": 1.0,
+          "plan_coverage_current_week": 1.4,
           "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
@@ -339,7 +339,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-06T20:24:30.403052",
+    "calculation_timestamp": "2026-04-06T21:06:24.172958",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -828,12 +828,38 @@
     {
       "id": 100495710,
       "date": "2026-04-11",
-      "name": "200k",
+      "name": "Aurora 120K Dart",
       "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 13.0,
-      "time_target": 46800,
-      "duration_formatted": "13h",
+      "duration_hours": 0.13,
+      "time_target": 480,
+      "duration_formatted": "8m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": ""
+    },
+    {
+      "id": 102887596,
+      "date": "2026-04-11",
+      "name": "To the start of Dart",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "time_target": 3600,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": ""
+    },
+    {
+      "id": 102888093,
+      "date": "2026-04-11",
+      "name": "Home from Dart",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 0.02,
+      "time_target": 60,
+      "duration_formatted": "1m",
       "workout_summary": null,
       "distance_target": null,
       "description": ""
