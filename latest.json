@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-06T11:35:54.616060",
+    "last_updated": "2026-04-06T12:37:55.797508",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -26,10 +26,10 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 41.7,
-        "delta_pct": null
+        "status": "green",
+        "value": 37.0,
+        "baseline_7d": 41.0,
+        "delta_pct": -9.8
       },
       "rhr": {
         "status": "green",
@@ -38,9 +38,9 @@
         "delta_bpm": -0.6
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "green",
+        "hours": 9.53,
+        "quality": 2
       },
       "acwr": {
         "status": "green",
@@ -51,8 +51,8 @@
         "value": 1
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 0.91
       },
       "tsb": {
         "status": "green",
@@ -60,10 +60,10 @@
       }
     },
     "signal_summary": {
-      "green": 4,
+      "green": 7,
       "amber": 0,
       "red": 0,
-      "unavailable": 3
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -73,7 +73,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 4 green, 0 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 7 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -145,21 +145,21 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 86.45481,
+      "weight_kg": 87.419,
       "resting_hr": 51,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "hrv": 37.0,
+      "sleep_quality": 2,
+      "sleep_hours": 9.53,
+      "sleep_formatted": "9h32m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 41.7,
+    "recovery_index": 0.91,
+    "hrv_baseline_7d": 41.0,
     "rhr_baseline_7d": 51.6,
-    "hrv_baseline_28d": 41.0,
+    "hrv_baseline_28d": 40.9,
     "rhr_baseline_28d": 51.5,
-    "latest_hrv": null,
+    "latest_hrv": 37.0,
     "latest_rhr": 51,
     "acwr": 1.06,
     "acwr_interpretation": "optimal",
@@ -172,7 +172,7 @@
     "multi_sport_detected": false,
     "strain": 491.0,
     "stress_tolerance": 4.2,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 4.6,
     "tss_7d_total": 423.0,
     "tss_28d_total": 1590.0,
     "zone_distribution_7d": {
@@ -306,7 +306,7 @@
           "race_proximity": 12,
           "next_week_load": 1.85,
           "plan_coverage_current_week": 1.0,
-          "plan_coverage_next_week": 0.6
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -339,9 +339,9 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-06T11:35:54.615174",
+    "calculation_timestamp": "2026-04-06T12:37:55.796664",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 6,
       "activities_28d": 20,
@@ -757,17 +757,17 @@
     },
     {
       "date": "2026-04-06",
-      "weight_kg": null,
+      "weight_kg": 87.419,
       "resting_hr": 51,
-      "hrv_rmssd": null,
+      "hrv_rmssd": 37.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 9.53,
+      "sleep_formatted": "9h32m",
+      "sleep_quality": 2,
+      "sleep_score": 83.0,
       "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
+      "fatigue": 2,
+      "soreness": 2,
       "avg_sleeping_hr": null,
       "vo2max": null
     }
@@ -837,6 +837,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": ""
+    },
+    {
+      "id": 102790430,
+      "date": "2026-04-13",
+      "name": "IntervalCoach - Sweet Spot Intervals",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.5,
+      "time_target": 5400,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie! Sweet spot endurance ahead. 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 2m 65-75% 85rpm\n- Sweet Spot 1 12m 88-92% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 2 11m 89% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 3 10m 89-93% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 4 9m 90% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 5 8m 90-94% 90rpm\n- Endurance 3m 65-75% 85rpm\n\nCooldown\n- Fantastic work, Duppie! Enjoy the rest. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 97757624,
@@ -1139,19 +1152,19 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
+    "attempted": 4,
     "success": 1,
     "patternA": 0,
     "patternB": 1,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 2
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 9.66,
     "total_training_formatted": "9h39m",
     "total_tss": 423,
     "activities_count": 6,
-    "avg_hrv": 41.7,
+    "avg_hrv": 41.0,
     "avg_resting_hr": 51.6
   },
   "race_calendar": {
