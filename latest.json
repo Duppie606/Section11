@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-09T11:39:27.414512",
+    "last_updated": "2026-04-09T12:48:01.104731",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -149,7 +149,7 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 86.29,
+      "weight_kg": 86.26,
       "resting_hr": 50,
       "hrv": 42.0,
       "sleep_quality": 2,
@@ -310,7 +310,7 @@
           "race_proximity": 9,
           "next_week_load": 1.85,
           "plan_coverage_current_week": 0.8,
-          "plan_coverage_next_week": 1.0
+          "plan_coverage_next_week": 1.2
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -343,7 +343,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-09T11:39:27.413677",
+    "calculation_timestamp": "2026-04-09T12:48:01.103561",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -717,7 +717,7 @@
     },
     {
       "date": "2026-04-09",
-      "weight_kg": null,
+      "weight_kg": 86.26,
       "resting_hr": 50,
       "hrv_rmssd": 42.0,
       "hrv_sdnn": null,
@@ -823,6 +823,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": "Warmup\n- Hey Duppie! Sweet spot awaits, let's go! 9m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 3m 65-75% 85rpm\n- Sweet Spot 1 12m 88-92% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 2 11m 89-93% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 3 10m 90-94% 90rpm\n- Endurance 3m 65-75% 85rpm\n\nCooldown\n- Fantastic work, Duppie! Spin easy now. 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+    },
+    {
+      "id": 103368504,
+      "date": "2026-04-16",
+      "name": "IntervalCoach - Base Building Cruise",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.5,
+      "time_target": 5400,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie! Base building progress! 14m ramp 45-75% 85rpm\n\nMain Set\n- Z2 Low 22m 65% 85rpm\n- Z2 Mid 22m 69% 88rpm\n- Z2 Upper 23m 73% 90rpm\n\nCooldown\n- Nice work, Duppie! Recover well. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 93479356,
@@ -1112,12 +1125,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
+    "attempted": 4,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 8.8,
