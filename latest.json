@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-12T14:05:38.140788",
+    "last_updated": "2026-04-12T14:58:29.911547",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -153,7 +153,7 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 87.069,
+      "weight_kg": 87.089836,
       "resting_hr": 55,
       "hrv": 35.0,
       "sleep_quality": 3,
@@ -345,7 +345,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-12T14:05:38.139891",
+    "calculation_timestamp": "2026-04-12T14:58:29.910662",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -771,7 +771,7 @@
     },
     {
       "date": "2026-04-12",
-      "weight_kg": 87.069,
+      "weight_kg": 87.089836,
       "resting_hr": 55,
       "hrv_rmssd": 35.0,
       "hrv_sdnn": null,
@@ -798,7 +798,7 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Sweet spot endurance ahead. 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 2m 65-75% 85rpm\n- Sweet Spot 1 12m 88-92% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 2 11m 89% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 3 10m 89-93% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 4 9m 90% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 5 8m 90-94% 90rpm\n- Endurance 3m 65-75% 85rpm\n\nCooldown\n- Fantastic work, Duppie! Enjoy the rest. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+      "description": "Warmup\n- Hey Duppie! Sweet spot endurance ahead. 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 41m 65-75% 85rpm\n- Sweet Spot 3 10m 89-93% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 5 10m 90-94% 90rpm\n- Endurance 3m 65% 85rpm\n\nCooldown\n- Fantastic work, Duppie! Enjoy the rest. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 97757624,
