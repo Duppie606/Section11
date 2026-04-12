@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-12T23:03:43.950003",
+    "last_updated": "2026-04-12T23:52:05.883301",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -312,7 +312,7 @@
           "race_proximity": 6,
           "next_week_load": 1.54,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 1.2
+          "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -345,7 +345,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-12T23:03:43.949137",
+    "calculation_timestamp": "2026-04-12T23:52:05.882440",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -848,19 +848,6 @@
       "duration_hours": 13.0,
       "time_target": 46800,
       "duration_formatted": "13h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": ""
-    },
-    {
-      "id": 93479421,
-      "date": "2026-04-19",
-      "name": "Northshore Ramble",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 4.0,
-      "time_target": 14400,
-      "duration_formatted": "4h",
       "workout_summary": null,
       "distance_target": null,
       "description": ""
