@@ -15,21 +15,21 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-12T11:49:16.785210",
+    "last_updated": "2026-04-12T13:13:55.597039",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
   },
   "alerts": [],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "modify",
+    "priority": 1,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 43.7,
-        "delta_pct": null
+        "status": "amber",
+        "value": 35.0,
+        "baseline_7d": 42.4,
+        "delta_pct": -17.5
       },
       "rhr": {
         "status": "amber",
@@ -38,9 +38,9 @@
         "delta_bpm": 3.9
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "amber",
+        "hours": 9.55,
+        "quality": 3
       },
       "acwr": {
         "status": "green",
@@ -51,19 +51,15 @@
         "value": 1
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
-      },
-      "tsb": {
         "status": "amber",
-        "value": -26.0
+        "value": 0.77
       }
     },
     "signal_summary": {
       "green": 2,
-      "amber": 2,
+      "amber": 4,
       "red": 0,
-      "unavailable": 3
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -72,8 +68,20 @@
       "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
-    "modification": null,
-    "reason": "P3 green light. 2 green, 2 amber (threshold 3), 0 red.",
+    "modification": {
+      "triggers": [
+        "hrv",
+        "rhr",
+        "sleep",
+        "ri"
+      ],
+      "suggested_adjustments": {
+        "intensity": "reduce",
+        "volume": "reduce",
+        "cap_zone": null
+      }
+    },
+    "reason": "P1 acute overload (modify). TSB -26.0 < -25 with HRV -17.5% below baseline.",
     "alarm_refs": []
   },
   "history": {
@@ -145,21 +153,21 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 87.26,
+      "weight_kg": 87.27128,
       "resting_hr": 55,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "hrv": 35.0,
+      "sleep_quality": 3,
+      "sleep_hours": 9.55,
+      "sleep_formatted": "9h33m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 43.7,
+    "recovery_index": 0.77,
+    "hrv_baseline_7d": 42.4,
     "rhr_baseline_7d": 51.1,
-    "hrv_baseline_28d": 41.4,
+    "hrv_baseline_28d": 41.2,
     "rhr_baseline_28d": 51.3,
-    "latest_hrv": null,
+    "latest_hrv": 35.0,
     "latest_rhr": 55,
     "acwr": 1.17,
     "acwr_interpretation": "optimal",
@@ -172,7 +180,7 @@
     "multi_sport_detected": false,
     "strain": 343.0,
     "stress_tolerance": 5.3,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 6.9,
     "tss_7d_total": 528.0,
     "tss_28d_total": 1799.0,
     "zone_distribution_7d": {
@@ -337,9 +345,9 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-12T11:49:16.784337",
+    "calculation_timestamp": "2026-04-12T13:13:55.596237",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 6,
       "activities_28d": 22,
@@ -763,17 +771,17 @@
     },
     {
       "date": "2026-04-12",
-      "weight_kg": 87.26,
+      "weight_kg": 87.27128,
       "resting_hr": 55,
-      "hrv_rmssd": null,
+      "hrv_rmssd": 35.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 9.55,
+      "sleep_formatted": "9h33m",
+      "sleep_quality": 3,
+      "sleep_score": 62.0,
       "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
+      "fatigue": 3,
+      "soreness": 2,
       "avg_sleeping_hr": null,
       "vo2max": null
     }
@@ -820,7 +828,7 @@
     },
     {
       "id": 103368504,
-      "date": "2026-04-16",
+      "date": "2026-04-15",
       "name": "IntervalCoach - Base Building Cruise",
       "type": "WORKOUT",
       "planned_tss": null,
@@ -1144,7 +1152,7 @@
     "total_training_formatted": "11h7m",
     "total_tss": 528,
     "activities_count": 6,
-    "avg_hrv": 43.7,
+    "avg_hrv": 42.4,
     "avg_resting_hr": 51.1
   },
   "race_calendar": {
