@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-13T15:20:31.654190",
+    "last_updated": "2026-04-13T16:43:52.995518",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -303,7 +303,7 @@
           "planned_tss_delta": 1.54,
           "hard_sessions_planned": 4,
           "race_proximity": 5,
-          "next_week_load": 1.14,
+          "next_week_load": 0.58,
           "plan_coverage_current_week": 1.0,
           "plan_coverage_next_week": 0.8
         },
@@ -338,7 +338,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-13T15:20:31.653321",
+    "calculation_timestamp": "2026-04-13T16:43:52.994671",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -863,12 +863,12 @@
       "date": "2026-04-20",
       "name": "Weekly",
       "type": "TARGET",
-      "planned_tss": 474,
-      "duration_hours": 9.78,
-      "time_target": 35220,
-      "duration_formatted": "9h47m",
+      "planned_tss": 240,
+      "duration_hours": 0.1,
+      "time_target": 360,
+      "duration_formatted": "6m",
       "workout_summary": null,
-      "distance_target": 244299.0,
+      "distance_target": 96561.0,
       "description": ""
     },
     {
