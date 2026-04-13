@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-13T17:45:18.529072",
+    "last_updated": "2026-04-13T19:21:30.307558",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -338,7 +338,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-13T17:45:18.528202",
+    "calculation_timestamp": "2026-04-13T19:21:30.306678",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -992,7 +992,7 @@
       "id": 101985447,
       "date": "2026-05-23",
       "name": "Chicago-Toledo 400K Brevet",
-      "type": "WORKOUT",
+      "type": "RACE_C",
       "planned_tss": null,
       "duration_hours": 23.0,
       "time_target": 82800,
@@ -1209,6 +1209,15 @@
         "distance_meters": 302557.0
       },
       {
+        "name": "Chicago-Toledo 400K Brevet",
+        "date": "2026-05-23",
+        "category": "RACE_C",
+        "type": "Ride",
+        "days_until": 40,
+        "moving_time_seconds": 82800,
+        "distance_meters": null
+      },
+      {
         "name": "Aurora City of Lights 400k Brevet",
         "date": "2026-05-30",
         "category": "RACE_C",
@@ -1216,15 +1225,6 @@
         "days_until": 47,
         "moving_time_seconds": 75600,
         "distance_meters": 410383.0
-      },
-      {
-        "name": "ChiRando 200k",
-        "date": "2026-06-13",
-        "category": "RACE_C",
-        "type": "Ride",
-        "days_until": 61,
-        "moving_time_seconds": 32400,
-        "distance_meters": 205997.0
       },
       {
         "name": "Chicago - Dunelands - Chicago 300k",
