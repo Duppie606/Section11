@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-14T17:11:41.717323",
+    "last_updated": "2026-04-14T17:43:19.976293",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -300,11 +300,11 @@
         },
         "stream_2": {
           "planned_tss_delta": null,
-          "hard_sessions_planned": 4,
-          "race_proximity": 4,
+          "hard_sessions_planned": 3,
+          "race_proximity": 6,
           "next_week_load": 0.58,
-          "plan_coverage_current_week": 0.8,
-          "plan_coverage_next_week": 0.8
+          "plan_coverage_current_week": 0.6,
+          "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -337,7 +337,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-14T17:11:41.716452",
+    "calculation_timestamp": "2026-04-14T17:43:19.975418",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -806,21 +806,8 @@
       "description": "Warmup\n- Hey Duppie! Sweet spot time is here 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 2m 65-75% 85rpm\n- Sweet Spot 1 12m 88-92% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 2 11m 89% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 3 10m 89-93% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 4 9m 90% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 5 8m 90-94% 90rpm\n- Endurance 3m 65-75% 85rpm\n\nCooldown\n- Fantastic ride, Duppie! Recover well 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
-      "id": 93479356,
-      "date": "2026-04-18",
-      "name": "200k",
-      "type": "RACE_C",
-      "planned_tss": null,
-      "duration_hours": 13.0,
-      "time_target": 46800,
-      "duration_formatted": "13h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": ""
-    },
-    {
       "id": 104245695,
-      "date": "2026-04-19",
+      "date": "2026-04-18",
       "name": "IntervalCoach - Endurance Build",
       "type": "WORKOUT",
       "planned_tss": null,
@@ -832,17 +819,17 @@
       "description": "Warmup\n- Hey Duppie! Endurance ride with spin-ups awaits. 15m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 65m 65% 85rpm\n- Build 65m 67% 88rpm\n- Upper Z2 65m 70-74% 90rpm\n- Cruise 66m 74-70% 88rpm\n\nCooldown\n- Awesome work, Duppie! Enjoy the cool down. 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
-      "id": 104245697,
+      "id": 93479356,
       "date": "2026-04-20",
-      "name": "IntervalCoach - Fartlek Endurance Mix",
-      "type": "WORKOUT",
+      "name": "200k",
+      "type": "RACE_C",
       "planned_tss": null,
-      "duration_hours": 1.5,
-      "time_target": 5400,
-      "duration_formatted": "1h30m",
+      "duration_hours": 13.0,
+      "time_target": 46800,
+      "duration_formatted": "13h",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Fartlek fun awaits us. 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 1 9m 76-88% 85rpm\n- Fartlek Surge 1 1m 89-95% 95rpm\n- Endurance 2 8m 76-88% 85rpm\n- Fartlek Surge 2 2m 95% 100rpm\n- Endurance 3 8m 76-88% 85rpm\n- Fartlek Surge 3 3m 89-95% 95rpm\n- Endurance 4 8m 76-88% 85rpm\n- Fartlek Surge 4 2m 95% 100rpm\n- Endurance 5 8m 76-88% 85rpm\n- Fartlek Surge 5 1m 89-95% 95rpm\n- Endurance 6 8m 76-88% 85rpm\n- Fartlek Surge 6 1m 95% 100rpm\n- Endurance 7 8m 76-88% 85rpm\n\nCooldown\n- Awesome work, Duppie! Spin easy now. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+      "description": ""
     },
     {
       "id": 97757625,
@@ -856,6 +843,19 @@
       "workout_summary": null,
       "distance_target": 96561.0,
       "description": ""
+    },
+    {
+      "id": 104245697,
+      "date": "2026-04-22",
+      "name": "IntervalCoach - Fartlek Endurance Mix",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.5,
+      "time_target": 5400,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description_preview": "Warmup\n- Hey Duppie! Fartlek fun awaits us. 14m ramp 45-75% 85rpm\nMain Set"
     },
     {
       "id": 93888239,
@@ -1150,20 +1150,20 @@
   "race_calendar": {
     "next_race": {
       "name": "200k",
-      "date": "2026-04-18",
+      "date": "2026-04-20",
       "category": "RACE_C",
       "type": "Ride",
-      "days_until": 4,
+      "days_until": 6,
       "moving_time_seconds": 46800,
       "distance_meters": 202778.0
     },
     "all_races": [
       {
         "name": "200k",
-        "date": "2026-04-18",
+        "date": "2026-04-20",
         "category": "RACE_C",
         "type": "Ride",
-        "days_until": 4,
+        "days_until": 6,
         "moving_time_seconds": 46800,
         "distance_meters": 202778.0
       },
