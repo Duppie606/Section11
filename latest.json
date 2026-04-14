@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-14T20:34:39.038469",
+    "last_updated": "2026-04-14T21:05:53.079120",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -337,7 +337,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-14T20:34:39.037604",
+    "calculation_timestamp": "2026-04-14T21:05:53.078242",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -785,17 +785,17 @@
       "name": "IntervalCoach - Endurance Build",
       "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 1.0,
-      "time_target": 3600,
-      "duration_formatted": "1h",
+      "duration_hours": 1.5,
+      "time_target": 5400,
+      "duration_formatted": "1h30m",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Endurance and cadence ahead 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Awesome ride, recover well 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+      "description": "Warmup\n- Hey Duppie! Endurance and cadence ahead 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 53m 72% 90rpm\n\nCooldown\n- Awesome ride, recover well 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
-      "id": 104245693,
+      "id": 104437411,
       "date": "2026-04-16",
-      "name": "IntervalCoach - Sweet Spot Intervals",
+      "name": "Endurance + Threshold Finish (90 min)",
       "type": "WORKOUT",
       "planned_tss": null,
       "duration_hours": 1.5,
@@ -803,7 +803,7 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Sweet spot time is here 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 2m 65-75% 85rpm\n- Sweet Spot 1 12m 88-92% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 2 11m 89% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 3 10m 89-93% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 4 9m 90% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 5 8m 90-94% 90rpm\n- Endurance 3m 65-75% 85rpm\n\nCooldown\n- Fantastic ride, Duppie! Recover well 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+      "description": "90-min workout. Ramp warm-up and cool-down, with endurance and threshold work.\n\nWarmup\n- 10m ramp 60-72%\n\n- 53m 72%\n- 8m 97%\n- 2m 60%\n- 8m 100%\n- 4m 72%\n\nCooldown\n- 5m ramp 72\n-60%"
     },
     {
       "id": 104245695,
@@ -811,12 +811,12 @@
       "name": "IntervalCoach - Endurance Build",
       "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 4.77,
-      "time_target": 17160,
-      "duration_formatted": "4h46m",
+      "duration_hours": 4.0,
+      "time_target": 14400,
+      "duration_formatted": "4h",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Endurance ride with spin-ups awaits. 15m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 65m 65% 85rpm\n- Build 65m 67% 88rpm\n- Upper Z2 65m 70-74% 90rpm\n- Cruise 66m 74-70% 88rpm\n\nCooldown\n- Awesome work, Duppie! Enjoy the cool down. 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+      "description": "Warmup\n- Hey Duppie! Endurance ride with spin-ups awaits. 15m ramp 45-68% 85rpm\n\nMain Set\n- Settle In 65m 68% 85rpm\n- Build 65m 70% 88rpm\n- Upper Z2 85m 72% 90rpm\n\n\nCooldown\n- Awesome work, Duppie! Enjoy the cool down. 10m ramp 72-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 93479356,
