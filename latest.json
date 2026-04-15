@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-15T12:05:00.175110",
+    "last_updated": "2026-04-15T12:39:58.827443",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -155,7 +155,7 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 87.519,
+      "weight_kg": 86.91,
       "resting_hr": 50,
       "hrv": 48.0,
       "sleep_quality": 2,
@@ -310,7 +310,7 @@
         "stream_2": {
           "planned_tss_delta": null,
           "hard_sessions_planned": 3,
-          "race_proximity": 5,
+          "race_proximity": 3,
           "next_week_load": 0.58,
           "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 1.0
@@ -346,7 +346,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-15T12:05:00.174233",
+    "calculation_timestamp": "2026-04-15T12:39:58.826579",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -720,7 +720,7 @@
     },
     {
       "date": "2026-04-15",
-      "weight_kg": null,
+      "weight_kg": 86.91,
       "resting_hr": 50,
       "hrv_rmssd": 48.0,
       "hrv_sdnn": null,
@@ -729,8 +729,8 @@
       "sleep_quality": 2,
       "sleep_score": 87.0,
       "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
+      "fatigue": 2,
+      "soreness": 2,
       "avg_sleeping_hr": null,
       "vo2max": null
     }
@@ -763,21 +763,8 @@
       "description": "90-min workout. Ramp warm-up and cool-down, with endurance and threshold work.\n\nWarmup\n- 10m ramp 60-72%\n\n- 53m 72%\n- 8m 97%\n- 2m 60%\n- 8m 100%\n- 4m 72%\n\nCooldown\n- 5m ramp 72\n-60%"
     },
     {
-      "id": 104245695,
-      "date": "2026-04-19",
-      "name": "IntervalCoach - Endurance Build",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 4.0,
-      "time_target": 14400,
-      "duration_formatted": "4h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Endurance ride with spin-ups awaits. 15m ramp 45-68% 85rpm\n\nMain Set\n- Settle In 65m 68% 85rpm\n- Build 65m 70% 88rpm\n- Upper Z2 85m 72% 90rpm\n\n\nCooldown\n- Awesome work, Duppie! Enjoy the cool down. 10m ramp 72-45% 85rpm\n\n[Weekly Plan - Base]"
-    },
-    {
       "id": 93479356,
-      "date": "2026-04-20",
+      "date": "2026-04-18",
       "name": "200k",
       "type": "RACE_C",
       "planned_tss": null,
@@ -787,6 +774,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": ""
+    },
+    {
+      "id": 104245695,
+      "date": "2026-04-20",
+      "name": "IntervalCoach - Endurance Build",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 4.0,
+      "time_target": 14400,
+      "duration_formatted": "4h",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie! Endurance ride with spin-ups awaits. 15m ramp 45-68% 85rpm\n\nMain Set\n- Settle In 65m 68% 85rpm\n- Build 65m 70% 88rpm\n- Upper Z2 85m 72% 90rpm\n\n\nCooldown\n- Awesome work, Duppie! Enjoy the cool down. 10m ramp 72-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 97757625,
@@ -1107,20 +1107,20 @@
   "race_calendar": {
     "next_race": {
       "name": "200k",
-      "date": "2026-04-20",
+      "date": "2026-04-18",
       "category": "RACE_C",
       "type": "Ride",
-      "days_until": 5,
+      "days_until": 3,
       "moving_time_seconds": 46800,
       "distance_meters": 202778.0
     },
     "all_races": [
       {
         "name": "200k",
-        "date": "2026-04-20",
+        "date": "2026-04-18",
         "category": "RACE_C",
         "type": "Ride",
-        "days_until": 5,
+        "days_until": 3,
         "moving_time_seconds": 46800,
         "distance_meters": 202778.0
       },
