@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-17T00:52:29.860522",
+    "last_updated": "2026-04-17T01:40:44.404059",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -313,7 +313,7 @@
           "hard_sessions_planned": 1,
           "race_proximity": 1,
           "next_week_load": 0.58,
-          "plan_coverage_current_week": 0.2,
+          "plan_coverage_current_week": 0.4,
           "plan_coverage_next_week": 1.4
         },
         "data_quality": "good",
@@ -347,7 +347,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-17T00:52:29.859641",
+    "calculation_timestamp": "2026-04-17T01:40:44.403062",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -789,6 +789,19 @@
     }
   ],
   "planned_workouts": [
+    {
+      "id": 104839891,
+      "date": "2026-04-18",
+      "name": "To the start of Dart",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "time_target": 3600,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": ""
+    },
     {
       "id": 93479356,
       "date": "2026-04-18",
