@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-18T17:17:12.329370",
+    "last_updated": "2026-04-18T17:47:14.716433",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -328,7 +328,7 @@
           "race_proximity": 14,
           "next_week_load": 0.58,
           "plan_coverage_current_week": 0.6,
-          "plan_coverage_next_week": 1.4
+          "plan_coverage_next_week": 0.6
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -363,7 +363,7 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-18T17:17:12.328477",
+    "calculation_timestamp": "2026-04-18T17:47:14.715608",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -689,19 +689,6 @@
       "description": "https://go.randoplan.com/qUXW0A\n\n\nhttps://go.randoplan.com/PcskBH"
     },
     {
-      "id": 104811415,
-      "date": "2026-04-20",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.0,
-      "time_target": 3600,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": "- 5m ramp 55-70%\n- 50m 70%\n- 5m ramp 70-50%"
-    },
-    {
       "id": 97757625,
       "date": "2026-04-20",
       "name": "Weekly",
@@ -713,32 +700,6 @@
       "workout_summary": null,
       "distance_target": 96561.0,
       "description": ""
-    },
-    {
-      "id": 104811703,
-      "date": "2026-04-21",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.0,
-      "time_target": 3600,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": "- 5m ramp 55-70%\n- 50m 70%\n- 5m ramp 70-50%"
-    },
-    {
-      "id": 104810128,
-      "date": "2026-04-22",
-      "name": "Endurance + SS Finish",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.5,
-      "time_target": 5400,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": "Endurance ride with a strong SS finish. Includes ramp warm-up and cool-down.\n\nWarmup\n- 15m ramp 60-75%\n\n- 44m 72%\n- 10m 90%\n- 3m 60%\n- 10m 92%\n- 3m 60%\n\nCooldown\n- 5m ramp 75-60%"
     },
     {
       "id": 93888239,
@@ -754,19 +715,6 @@
       "description": ""
     },
     {
-      "id": 104811569,
-      "date": "2026-04-24",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.0,
-      "time_target": 3600,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": "- 5m ramp 55-70%\n- 50m 70%\n- 5m ramp 70-50%"
-    },
-    {
       "id": 93888284,
       "date": "2026-04-25",
       "name": "One of a Kind",
@@ -780,19 +728,6 @@
       "description": ""
     },
     {
-      "id": 104811549,
-      "date": "2026-04-27",
-      "name": "IntervalCoach - Ramp Test",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.0,
-      "time_target": 3600,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description_preview": "Warmup\n- Hello Duppie let's prepare the legs for this assessment 10m ramp 40-75% 90rpm\nMain Set"
-    },
-    {
       "id": 97757626,
       "date": "2026-04-27",
       "name": "Weekly",
@@ -804,32 +739,6 @@
       "workout_summary": null,
       "distance_target": 310614.0,
       "description_preview": null
-    },
-    {
-      "id": 104811763,
-      "date": "2026-04-29",
-      "name": "Endurance + Threshold Finish (90 min)",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.5,
-      "time_target": 5400,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "distance_target": null,
-      "description_preview": "90-min workout. Ramp warm-up and cool-down, with endurance and threshold work.\nWarmup\n- 10m ramp 60-72%"
-    },
-    {
-      "id": 104811838,
-      "date": "2026-04-30",
-      "name": "Endurance",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 2.0,
-      "time_target": 7200,
-      "duration_formatted": "2h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description_preview": "- 5m ramp 55-70%\n- 110m 70%\n- 5m ramp 70-50%"
     },
     {
       "id": 93479332,
@@ -1080,12 +989,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 7,
+    "attempted": 0,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 1,
-    "bail_no_match": 7
+    "bail_no_match": 0
   },
   "weekly_summary": {
     "total_training_hours": 3.86,
