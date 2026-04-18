@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-18T13:32:15.728534",
+    "last_updated": "2026-04-18T14:05:07.315816",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -58,7 +58,7 @@
       },
       "sleep": {
         "status": "amber",
-        "hours": 6.42,
+        "hours": 8.42,
         "quality": 3
       },
       "acwr": {
@@ -168,12 +168,12 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 87.569,
+      "weight_kg": 87.11,
       "resting_hr": 50,
       "hrv": 50.0,
       "sleep_quality": 3,
-      "sleep_hours": 6.42,
-      "sleep_formatted": "6h25m"
+      "sleep_hours": 8.42,
+      "sleep_formatted": "8h25m"
     }
   },
   "derived_metrics": {
@@ -327,7 +327,7 @@
           "hard_sessions_planned": 0,
           "race_proximity": 14,
           "next_week_load": 0.58,
-          "plan_coverage_current_week": 0.4,
+          "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 1.4
         },
         "data_quality": "good",
@@ -363,13 +363,13 @@
     "p_max": 714,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-18T13:32:15.727640",
+    "calculation_timestamp": "2026-04-18T14:05:07.314976",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 3,
       "activities_28d": 19,
-      "planned_workouts_7d": 6,
+      "planned_workouts_7d": 7,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -633,12 +633,12 @@
     },
     {
       "date": "2026-04-18",
-      "weight_kg": 87.569,
+      "weight_kg": 87.11,
       "resting_hr": 50,
       "hrv_rmssd": 50.0,
       "hrv_sdnn": null,
-      "sleep_hours": 6.42,
-      "sleep_formatted": "6h25m",
+      "sleep_hours": 8.42,
+      "sleep_formatted": "8h25m",
       "sleep_quality": 3,
       "sleep_score": 79.0,
       "mental_energy": null,
@@ -658,6 +658,19 @@
       "duration_hours": 1.0,
       "time_target": 3600,
       "duration_formatted": "1h",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": ""
+    },
+    {
+      "id": 105073276,
+      "date": "2026-04-18",
+      "name": "sore throat",
+      "type": "SICK",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "time_target": null,
+      "duration_formatted": "0s",
       "workout_summary": null,
       "distance_target": null,
       "description": ""
