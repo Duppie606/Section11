@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-21T18:40:10.336197",
+    "last_updated": "2026-04-21T19:11:35.139407",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -122,7 +122,7 @@
       "atl": 42.32,
       "tsb": 5.61,
       "ramp_rate": -3.36,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": 188.5,
@@ -282,16 +282,17 @@
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
       }
     },
-    "consistency_index": 0.75,
+    "consistency_index": 0.6,
     "consistency_details": {
-      "planned_days": 4,
+      "planned_days": 5,
       "completed_days": 3,
       "matched_days": 3,
       "planned_dates": [
         "2026-04-15",
         "2026-04-16",
         "2026-04-18",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "completed_dates": [
         "2026-04-15",
@@ -312,10 +313,10 @@
         },
         "stream_2": {
           "planned_tss_delta": null,
-          "hard_sessions_planned": 2,
+          "hard_sessions_planned": 3,
           "race_proximity": 11,
           "next_week_load": 1.45,
-          "plan_coverage_current_week": 0.8,
+          "plan_coverage_current_week": 1.0,
           "plan_coverage_next_week": 0.6
         },
         "data_quality": "good",
@@ -349,13 +350,13 @@
     "p_max": 711,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-21T18:40:10.335334",
+    "calculation_timestamp": "2026-04-21T19:11:35.138562",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 3,
       "activities_28d": 19,
-      "planned_workouts_7d": 8,
+      "planned_workouts_7d": 9,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -637,6 +638,19 @@
   "planned_workouts": [
     {
       "id": 105627260,
+      "date": "2026-04-21",
+      "name": "IntervalCoach - Endurance Cruise",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.75,
+      "time_target": 6300,
+      "duration_formatted": "1h45m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie! Fat Max Ride awaits! 15m ramp 45-75% 85rpm\n\nMain Set\n- Low Z2 27m 67% 85rpm\n- Settle In 27m 67-72% 85rpm\n- Cruise 26m 72-67% 88rpm\n\nCooldown\n- Fantastic work, enjoy the recovery spin 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+    },
+    {
+      "id": 105788261,
       "date": "2026-04-22",
       "name": "IntervalCoach - Endurance Cruise",
       "type": "WORKOUT",
@@ -962,12 +976,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
+    "attempted": 4,
     "success": 1,
     "patternA": 0,
     "patternB": 1,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 2
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 4.11,
