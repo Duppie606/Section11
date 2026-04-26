@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-26T14:07:56.777345",
+    "last_updated": "2026-04-26T14:31:45.703449",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -315,7 +315,7 @@
           "race_proximity": 13,
           "next_week_load": 1.34,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 1.0
+          "plan_coverage_next_week": 1.2
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -348,7 +348,7 @@
     "p_max": 707,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-26T14:07:56.776440",
+    "calculation_timestamp": "2026-04-26T14:31:45.702541",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -698,6 +698,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": ""
+    },
+    {
+      "id": 106581804,
+      "date": "2026-05-03",
+      "name": "IntervalCoach - Aerobic Endurance Cruise",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 2.87,
+      "time_target": 10320,
+      "duration_formatted": "2h52m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie! Long aerobic ride ahead 15m ramp 45-75% 85rpm\n\nMain Set\n- Z2 Low 49m 65% 85rpm\n- Z2 Mid 49m 69% 88rpm\n- Z2 Upper 49m 73% 90rpm\n\nCooldown\n- Fantastic work, enjoy the spin down 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 106493294,
@@ -1065,12 +1078,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
+    "attempted": 4,
     "success": 1,
     "patternA": 0,
     "patternB": 1,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 2
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 5.02,
