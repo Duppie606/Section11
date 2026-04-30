@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-30T00:05:52.192648",
+    "last_updated": "2026-04-30T01:09:56.544819",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -340,7 +340,7 @@
     "p_max": 705,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-30T00:05:52.191782",
+    "calculation_timestamp": "2026-04-30T01:09:56.543988",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -358,7 +358,7 @@
       "id": "i144185322",
       "date": "2026-04-29T15:37:45",
       "type": "VirtualRide",
-      "name": "Endurance + Threshold Finish (90 min)",
+      "name": "TPV: Endurance + Threshold Finish (90 min)",
       "duration_hours": 1.51,
       "distance_km": 41.54,
       "tss": 91,
