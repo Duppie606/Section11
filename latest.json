@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-02T17:21:39.200563",
+    "last_updated": "2026-05-02T17:48:14.532851",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -103,7 +103,7 @@
         "duration_decimal_hours": 0.83,
         "count": 1,
         "tss": 24,
-        "distance_km": 18.2
+        "distance_km": 20.9
       },
       "VirtualRide": {
         "duration_decimal_hours": 4.1,
@@ -347,7 +347,7 @@
     "p_max": 703,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 38.0,
-    "calculation_timestamp": "2026-05-02T17:21:39.199672",
+    "calculation_timestamp": "2026-05-02T17:48:14.531993",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -367,7 +367,7 @@
       "type": "Ride",
       "name": "Training Session",
       "duration_hours": 0.83,
-      "distance_km": 18.2,
+      "distance_km": 20.92,
       "tss": 24,
       "intensity_factor": 53.68421,
       "avg_power": 94,
@@ -375,7 +375,7 @@
       "avg_hr": 122,
       "max_hr": 164,
       "avg_cadence": 82.79629,
-      "avg_speed": 18.6,
+      "avg_speed": 21.4,
       "max_speed": 28.2,
       "avg_pace": null,
       "avg_temp": 9.8623905,
@@ -391,8 +391,8 @@
       "efficiency_factor": 0.8360656,
       "hrrc": 29,
       "elevation_m": 53.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 1,
+      "rpe": 2,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2824,
