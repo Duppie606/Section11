@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-02T13:11:25.382966",
+    "last_updated": "2026-05-02T13:49:44.307609",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -292,7 +292,7 @@
     },
     "phase_detection": {
       "phase": "Build",
-      "confidence": "medium",
+      "confidence": "high",
       "reason_codes": [],
       "basis": {
         "stream_1": {
@@ -303,10 +303,10 @@
         },
         "stream_2": {
           "planned_tss_delta": null,
-          "hard_sessions_planned": 1,
-          "race_proximity": 7,
+          "hard_sessions_planned": 2,
+          "race_proximity": 1,
           "next_week_load": 1.52,
-          "plan_coverage_current_week": 0.4,
+          "plan_coverage_current_week": 0.8,
           "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
@@ -340,7 +340,7 @@
     "p_max": 703,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-02T13:11:25.382079",
+    "calculation_timestamp": "2026-05-02T13:49:44.306738",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -632,22 +632,48 @@
       "name": "IntervalCoach - Aerobic Endurance Cruise",
       "type": "WORKOUT",
       "planned_tss": null,
+      "duration_hours": 1.08,
+      "time_target": 3900,
+      "duration_formatted": "1h5m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie! Long aerobic ride ahead 5m ramp 45-65% 85rpm\n\nMain Set\n- Z2 Upper 55m 65% 90rpm\n\nCooldown\n- Fantastic work, enjoy the spin down 5m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+    },
+    {
+      "id": 107707055,
+      "date": "2026-05-03",
+      "name": "To Union Sation",
+      "type": "WORKOUT",
+      "planned_tss": null,
       "duration_hours": 1.0,
       "time_target": 3600,
       "duration_formatted": "1h",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Long aerobic ride ahead 10m ramp 45-70% 85rpm\n\nMain Set\n- Z2 Upper 45m 70% 90rpm\n\nCooldown\n- Fantastic work, enjoy the spin down 5m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+      "description": ""
+    },
+    {
+      "id": 107707242,
+      "date": "2026-05-03",
+      "name": "Naperville - Home",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 3.0,
+      "time_target": 10800,
+      "duration_formatted": "3h",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": ""
     },
     {
       "id": 93479332,
       "date": "2026-05-03",
-      "name": "200k",
-      "type": "WORKOUT",
+      "name": "Burlington Route",
+      "type": "RACE_C",
       "planned_tss": null,
-      "duration_hours": 9.0,
-      "time_target": 32400,
-      "duration_formatted": "9h",
+      "duration_hours": 8.0,
+      "time_target": 28800,
+      "duration_formatted": "8h",
       "workout_summary": null,
       "distance_target": null,
       "description": ""
@@ -666,21 +692,8 @@
       "description": ""
     },
     {
-      "id": 106839835,
-      "date": "2026-05-04",
-      "name": "IntervalCoach - Sweet Spot Intervals",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.5,
-      "time_target": 5400,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Sweet spot awaits 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 2m 65-75% 85rpm\n- Sweet Spot 1 12m 88-92% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 2 11m 89% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 3 10m 89-93% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 4 9m 90% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 5 8m 90-94% 90rpm\n- Endurance 3m 65-75% 85rpm\n\nCooldown\n- Fantastic work, Duppie! Recover well 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
-    },
-    {
       "id": 107250573,
-      "date": "2026-05-06",
+      "date": "2026-05-04",
       "name": "IntervalCoach - Aerobic Endurance",
       "type": "WORKOUT",
       "planned_tss": null,
@@ -690,6 +703,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": "Warmup\n- Hey Duppie! Let's build that endurance. 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Fantastic work, Duppie! Enjoy the spin. 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 106839835,
+      "date": "2026-05-06",
+      "name": "IntervalCoach - Sweet Spot Intervals",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.5,
+      "time_target": 5400,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie! Sweet spot awaits 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 2m 65-75% 85rpm\n- Sweet Spot 1 12m 88-92% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 2 11m 89% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 3 10m 89-93% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 4 9m 90% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 5 8m 90-94% 90rpm\n- Endurance 3m 65-75% 85rpm\n\nCooldown\n- Fantastic work, Duppie! Recover well 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
       "id": 107425756,
@@ -1074,15 +1100,24 @@
   },
   "race_calendar": {
     "next_race": {
-      "name": "300k",
-      "date": "2026-05-09",
+      "name": "Burlington Route",
+      "date": "2026-05-03",
       "category": "RACE_C",
       "type": "Ride",
-      "days_until": 7,
-      "moving_time_seconds": 64800,
-      "distance_meters": 299338.0
+      "days_until": 1,
+      "moving_time_seconds": 28800,
+      "distance_meters": 199559.0
     },
     "all_races": [
+      {
+        "name": "Burlington Route",
+        "date": "2026-05-03",
+        "category": "RACE_C",
+        "type": "Ride",
+        "days_until": 1,
+        "moving_time_seconds": 28800,
+        "distance_meters": 199559.0
+      },
       {
         "name": "300k",
         "date": "2026-05-09",
