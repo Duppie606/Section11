@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-04T23:24:07.819580",
+    "last_updated": "2026-05-04T23:49:38.396840",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -333,7 +333,7 @@
           "hard_sessions_planned": 4,
           "race_proximity": 5,
           "next_week_load": 1.59,
-          "plan_coverage_current_week": 1.0,
+          "plan_coverage_current_week": 1.2,
           "plan_coverage_next_week": 0.6
         },
         "data_quality": "good",
@@ -367,7 +367,7 @@
     "p_max": 703,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-04T23:24:07.818695",
+    "calculation_timestamp": "2026-05-04T23:49:38.395993",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -823,9 +823,9 @@
       "description": ""
     },
     {
-      "id": 106839835,
-      "date": "2026-05-06",
-      "name": "IntervalCoach - Sweet Spot Intervals",
+      "id": 108266897,
+      "date": "2026-05-05",
+      "name": "Endurance + SS Finish",
       "type": "WORKOUT",
       "planned_tss": null,
       "duration_hours": 1.5,
@@ -833,11 +833,11 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Sweet spot awaits 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 2m 65-75% 85rpm\n- Sweet Spot 1 12m 88-92% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 2 11m 89% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 3 10m 89-93% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 4 9m 90% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 5 8m 90-94% 90rpm\n- Endurance 3m 65-75% 85rpm\n\nCooldown\n- Fantastic work, Duppie! Recover well 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+      "description": "Endurance ride with a strong SS finish. Includes ramp warm-up and cool-down.\n\nWarmup\n- 10m ramp 55-70%\n\n- 52m 70%\n- 10m 90%\n- 3m 60%\n- 10m 92%\n\nCooldown\n- 5m ramp 70-55%"
     },
     {
       "id": 107425756,
-      "date": "2026-05-07",
+      "date": "2026-05-06",
       "name": "IntervalCoach - Aerobic Endurance",
       "type": "WORKOUT",
       "planned_tss": null,
@@ -847,6 +847,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": "Warmup\n- Hey Duppie! Aerobic build ahead. 14m ramp 45-75% 85rpm\n\nMain Set\n- Z2 Low 22m 65% 85rpm\n- Z2 Mid 22m 69% 88rpm\n- Z2 Upper 23m 73% 90rpm\n\nCooldown\n- Fantastic ride, Duppie! Recover well. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 108267074,
+      "date": "2026-05-07",
+      "name": "Endurance + Tempo Finish (90 min)",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.58,
+      "time_target": 5700,
+      "duration_formatted": "1h35m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Endurance with a tempo finish. Includes ramp warm-up and cool-down.\n\nWarmup\n- 10m ramp 55-70%\n\n- 55m 70%\n- 10m 85%\n- 5m 60%\n- 10m 88%\n\n\nCooldown\n- 5m ramp 75-60%"
     },
     {
       "id": 104008197,
@@ -1240,12 +1253,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 13.59,
