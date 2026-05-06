@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-06T00:03:44.875314",
+    "last_updated": "2026-05-06T01:06:29.372765",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -56,7 +56,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -6.9
+        "value": 1.0
       }
     },
     "signal_summary": {
@@ -105,10 +105,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 49.4,
-      "atl": 56.26,
-      "tsb": -6.86,
-      "ramp_rate": 5.53,
+      "ctl": 47.44,
+      "atl": 46.46,
+      "tsb": 0.98,
+      "ramp_rate": 3.58,
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
@@ -269,16 +269,15 @@
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
       }
     },
-    "consistency_index": 0.6,
+    "consistency_index": 0.75,
     "consistency_details": {
-      "planned_days": 5,
+      "planned_days": 4,
       "completed_days": 3,
       "matched_days": 3,
       "planned_dates": [
         "2026-04-30",
         "2026-05-02",
         "2026-05-03",
-        "2026-05-05",
         "2026-05-06"
       ],
       "completed_dates": [
@@ -303,7 +302,7 @@
           "hard_sessions_planned": 3,
           "race_proximity": 3,
           "next_week_load": 1.59,
-          "plan_coverage_current_week": 0.6,
+          "plan_coverage_current_week": 0.8,
           "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
@@ -337,7 +336,7 @@
     "p_max": 703,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-06T00:03:44.874441",
+    "calculation_timestamp": "2026-05-06T01:06:29.371902",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -739,6 +738,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": "Warmup\n- Hey Duppie! Aerobic build ahead. 14m ramp 45-75% 85rpm\n\nMain Set\n- Z2 Low 22m 65% 85rpm\n- Z2 Mid 22m 69% 88rpm\n- Z2 Upper 23m 73% 90rpm\n\nCooldown\n- Fantastic ride, Duppie! Recover well. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 108266897,
+      "date": "2026-05-06",
+      "name": "Endurance + SS Finish",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.5,
+      "time_target": 5400,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Endurance ride with a strong SS finish. Includes ramp warm-up and cool-down.\n\nWarmup\n- 10m ramp 55-70%\n\n- 52m 70%\n- 10m 90%\n- 3m 60%\n- 10m 92%\n\nCooldown\n- 5m ramp 70-55%"
     },
     {
       "id": 108267074,
@@ -1197,12 +1209,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 8,
+    "attempted": 9,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 7
+    "bail_no_match": 8
   },
   "weekly_summary": {
     "total_training_hours": 12.07,
