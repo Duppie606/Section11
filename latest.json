@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-11T20:21:49.580526",
+    "last_updated": "2026-05-11T21:03:01.783742",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -350,7 +350,7 @@
     "p_max": 718,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-11T20:21:49.579651",
+    "calculation_timestamp": "2026-05-11T21:03:01.782870",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -655,12 +655,12 @@
       "name": "IntervalCoach - Endurance Bursts",
       "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 1.51,
-      "time_target": 5445,
-      "duration_formatted": "1h30m45s",
-      "workout_summary": "10m @109W | 1h6m @133W | 13\u00d730s @229W / 15s rec | 5m @104W",
+      "duration_hours": 1.01,
+      "time_target": 3645,
+      "duration_formatted": "1h45s",
+      "workout_summary": "10m @109W | 36m @133W | 13\u00d730s @229W / 15s rec | 5m @104W",
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Endurance and microbursts today. 10m ramp 45-70% 85rpm\n\nMain Set\n- Endurance 66m 70% 88rpm\n\n13x\n- Burst 30s 121% 100rpm\n- Off 15s 55% 85rpm\n\n\n\nCooldown\n- Awesome work, Duppie! Recover well. 5m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
+      "description": "Warmup\n- Hey Duppie! Endurance and microbursts today. 10m ramp 45-70% 85rpm\n\nMain Set\n- Endurance 36m 70% 88rpm\n\n13x\n- Burst 30s 121% 100rpm\n- Off 15s 55% 85rpm\n\n\n\nCooldown\n- Awesome work, Duppie! Recover well. 5m ramp 65-45% 85rpm\n\n[Weekly Plan - Base]"
     },
     {
       "id": 108268496,
