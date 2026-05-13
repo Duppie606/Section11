@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-13T19:56:12.785583",
+    "last_updated": "2026-05-13T20:42:12.036904",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -350,7 +350,7 @@
     "p_max": 718,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-13T19:56:12.784746",
+    "calculation_timestamp": "2026-05-13T20:42:12.036068",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -637,21 +637,8 @@
   ],
   "planned_workouts": [
     {
-      "id": 108268496,
-      "date": "2026-05-13",
-      "name": "IntervalCoach - Aerobic Endurance",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.5,
-      "time_target": 5400,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Aerobic build ahead. 14m ramp 45-75% 85rpm\n\nMain Set\n- Z2 Low 22m 65% 85rpm\n- Z2 Mid 22m 69% 88rpm\n- Z2 Upper 23m 73% 90rpm\n\nCooldown\n- Fantastic ride, Duppie! Recover well. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
-    },
-    {
       "id": 108268526,
-      "date": "2026-05-14",
+      "date": "2026-05-13",
       "name": "Endurance + Threshold Finish (90 min)",
       "type": "WORKOUT",
       "planned_tss": null,
@@ -661,6 +648,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": "90-min workout. Ramp warm-up and cool-down, with endurance and threshold work.\n\nWarmup\n- 10m ramp 60-72%\n\n- 38m 72%\n- 8m 97%\n- 2m 60%\n- 8m 100%\n- 4m 72%\n\nCooldown\n- 5m ramp 72-60%"
+    },
+    {
+      "id": 108268496,
+      "date": "2026-05-14",
+      "name": "IntervalCoach - Aerobic Endurance",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.5,
+      "time_target": 5400,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie! Aerobic build ahead. 14m ramp 45-75% 85rpm\n\nMain Set\n- Z2 Low 22m 65% 85rpm\n- Z2 Mid 22m 69% 88rpm\n- Z2 Upper 23m 73% 90rpm\n\nCooldown\n- Fantastic ride, Duppie! Recover well. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
       "id": 109818238,
