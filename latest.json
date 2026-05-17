@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-16T23:34:44.270711",
+    "last_updated": "2026-05-17T00:05:32.904836",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -41,25 +41,25 @@
     }
   ],
   "readiness_decision": {
-    "recommendation": "skip",
-    "priority": 1,
+    "recommendation": "modify",
+    "priority": 2,
     "signals": {
       "hrv": {
-        "status": "amber",
-        "value": 39.0,
-        "baseline_7d": 45.6,
-        "delta_pct": -14.5
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 46.3,
+        "delta_pct": null
       },
       "rhr": {
-        "status": "amber",
-        "value": 54,
-        "baseline_7d": 50.3,
-        "delta_bpm": 3.7
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 49.5,
+        "delta_bpm": null
       },
       "sleep": {
-        "status": "red",
-        "hours": 5.32,
-        "quality": 4
+        "status": "unavailable",
+        "hours": null,
+        "quality": null
       },
       "acwr": {
         "status": "amber",
@@ -70,15 +70,19 @@
         "value": 1
       },
       "ri": {
-        "status": "green",
-        "value": 0.8
+        "status": "unavailable",
+        "value": null
+      },
+      "tsb": {
+        "status": "red",
+        "value": -45.1
       }
     },
     "signal_summary": {
-      "green": 2,
-      "amber": 3,
+      "green": 1,
+      "amber": 1,
       "red": 1,
-      "unavailable": 0
+      "unavailable": 4
     },
     "phase_context": {
       "phase": "Build",
@@ -87,8 +91,18 @@
       "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
-    "modification": null,
-    "reason": "P1 acute overload. TSB -60.3 < -30 with HRV -14.5% below baseline.",
+    "modification": {
+      "triggers": [
+        "tsb",
+        "acwr"
+      ],
+      "suggested_adjustments": {
+        "intensity": "reduce",
+        "volume": "reduce",
+        "cap_zone": "Z2"
+      }
+    },
+    "reason": "P2 signal count. 1 red (tsb), 1 amber (acwr).",
     "alarm_refs": []
   },
   "history": {
@@ -120,10 +134,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 65.21,
-      "atl": 125.51,
-      "tsb": -60.3,
-      "ramp_rate": 8.66,
+      "ctl": 63.68,
+      "atl": 108.8,
+      "tsb": -45.12,
+      "ramp_rate": 8.46,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -131,7 +145,7 @@
       "w_prime": 13168,
       "w_prime_kj": 13.2,
       "p_max": 718,
-      "vo2max": 38.0,
+      "vo2max": null,
       "sports": {
         "cycling": {
           "lthr": 161,
@@ -162,20 +176,20 @@
     "current_metrics": {
       "weight_kg": 86.9084,
       "resting_hr": 54,
-      "hrv": 39.0,
-      "sleep_quality": 4,
-      "sleep_hours": 5.32,
-      "sleep_formatted": "5h19m"
+      "hrv": null,
+      "sleep_quality": null,
+      "sleep_hours": null,
+      "sleep_formatted": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.8,
-    "hrv_baseline_7d": 45.6,
-    "rhr_baseline_7d": 50.3,
-    "hrv_baseline_28d": 44.9,
-    "rhr_baseline_28d": 50,
-    "latest_hrv": 39.0,
-    "latest_rhr": 54,
+    "recovery_index": null,
+    "hrv_baseline_7d": 46.3,
+    "rhr_baseline_7d": 49.5,
+    "hrv_baseline_28d": 44.8,
+    "rhr_baseline_28d": 50.1,
+    "latest_hrv": null,
+    "latest_rhr": null,
     "acwr": 0.59,
     "acwr_interpretation": "undertraining",
     "monotony": 0.94,
@@ -187,7 +201,7 @@
     "multi_sport_detected": false,
     "strain": 213.0,
     "stress_tolerance": 2.3,
-    "load_recovery_ratio": 2.8,
+    "load_recovery_ratio": null,
     "tss_7d_total": 227.0,
     "tss_28d_total": 1528.0,
     "zone_distribution_7d": {
@@ -315,10 +329,10 @@
         },
         "stream_2": {
           "planned_tss_delta": null,
-          "hard_sessions_planned": 1,
-          "race_proximity": 0,
+          "hard_sessions_planned": 0,
+          "race_proximity": 13,
           "next_week_load": 1.12,
-          "plan_coverage_current_week": 0.6,
+          "plan_coverage_current_week": 0.0,
           "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
@@ -351,11 +365,11 @@
     "w_prime_kj": 13.2,
     "p_max": 718,
     "power_model_source": "wellness.sportInfo",
-    "vo2max": 38.0,
-    "calculation_timestamp": "2026-05-16T23:34:44.269868",
+    "vo2max": null,
+    "calculation_timestamp": "2026-05-17T00:05:32.903958",
     "data_quality": {
-      "hrv_data_points": 7,
-      "rhr_data_points": 7,
+      "hrv_data_points": 6,
+      "rhr_data_points": 6,
       "activities_7d": 4,
       "activities_28d": 17,
       "planned_workouts_7d": 7,
@@ -577,22 +591,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-05-10",
-      "weight_kg": 86.636246,
-      "resting_hr": 55,
-      "hrv_rmssd": 41.0,
-      "hrv_sdnn": null,
-      "sleep_hours": 8.63,
-      "sleep_formatted": "8h38m",
-      "sleep_quality": 3,
-      "sleep_score": 79.0,
-      "mental_energy": null,
-      "fatigue": 3,
-      "soreness": 3,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
-    {
       "date": "2026-05-11",
       "weight_kg": 87.16,
       "resting_hr": 49,
@@ -687,48 +685,25 @@
       "soreness": 2,
       "avg_sleeping_hr": null,
       "vo2max": 38.0
+    },
+    {
+      "date": "2026-05-17",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
-    {
-      "id": 109818238,
-      "date": "2026-05-16",
-      "name": "To the start of the Brevet",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.0,
-      "time_target": 3600,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": ""
-    },
-    {
-      "id": 109818270,
-      "date": "2026-05-16",
-      "name": "Home from the Brevet",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.0,
-      "time_target": 3600,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": ""
-    },
-    {
-      "id": 86936906,
-      "date": "2026-05-16",
-      "name": "CHI-MKE-CHI 300k brevet",
-      "type": "RACE_C",
-      "planned_tss": null,
-      "duration_hours": 18.0,
-      "time_target": 64800,
-      "duration_formatted": "18h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": "https://go.randoplan.com/2kZqgd"
-    },
     {
       "id": 106493296,
       "date": "2026-05-18",
@@ -1164,7 +1139,7 @@
     "success": 0,
     "patternA": 0,
     "patternB": 0,
-    "bail_no_workout_doc": 1,
+    "bail_no_workout_doc": 0,
     "bail_no_match": 6
   },
   "weekly_summary": {
@@ -1172,35 +1147,26 @@
     "total_training_formatted": "4h34m",
     "total_tss": 227,
     "activities_count": 4,
-    "avg_hrv": 45.6,
-    "avg_resting_hr": 50.3
+    "avg_hrv": 46.3,
+    "avg_resting_hr": 49.5
   },
   "race_calendar": {
     "next_race": {
-      "name": "CHI-MKE-CHI 300k brevet",
-      "date": "2026-05-16",
+      "name": "Aurora City of Lights 400k Brevet",
+      "date": "2026-05-30",
       "category": "RACE_C",
       "type": "Ride",
-      "days_until": 0,
-      "moving_time_seconds": 64800,
-      "distance_meters": 329916.0
+      "days_until": 13,
+      "moving_time_seconds": 75600,
+      "distance_meters": 410383.0
     },
     "all_races": [
-      {
-        "name": "CHI-MKE-CHI 300k brevet",
-        "date": "2026-05-16",
-        "category": "RACE_C",
-        "type": "Ride",
-        "days_until": 0,
-        "moving_time_seconds": 64800,
-        "distance_meters": 329916.0
-      },
       {
         "name": "Aurora City of Lights 400k Brevet",
         "date": "2026-05-30",
         "category": "RACE_C",
         "type": "Ride",
-        "days_until": 14,
+        "days_until": 13,
         "moving_time_seconds": 75600,
         "distance_meters": 410383.0
       },
@@ -1209,7 +1175,7 @@
         "date": "2026-06-27",
         "category": "RACE_C",
         "type": "Ride",
-        "days_until": 42,
+        "days_until": 41,
         "moving_time_seconds": 64800,
         "distance_meters": 299338.0
       },
@@ -1218,7 +1184,7 @@
         "date": "2026-07-11",
         "category": "RACE_B",
         "type": "Ride",
-        "days_until": 56,
+        "days_until": 55,
         "moving_time_seconds": 133200,
         "distance_meters": 603504.0
       },
@@ -1227,7 +1193,7 @@
         "date": "2026-08-06",
         "category": "RACE_A",
         "type": "Ride",
-        "days_until": 82,
+        "days_until": 81,
         "moving_time_seconds": 324000,
         "distance_meters": 1198962.0
       }
