@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-18T11:32:54.983024",
+    "last_updated": "2026-05-18T12:53:24.112323",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -36,10 +36,10 @@
     "priority": 1,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 41.5,
-        "delta_pct": null
+        "status": "green",
+        "value": 41.0,
+        "baseline_7d": 41.4,
+        "delta_pct": -1.0
       },
       "rhr": {
         "status": "amber",
@@ -48,9 +48,9 @@
         "delta_bpm": 3.1
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "green",
+        "hours": 9.73,
+        "quality": 2
       },
       "acwr": {
         "status": "amber",
@@ -61,15 +61,15 @@
         "value": 2
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 0.93
       }
     },
     "signal_summary": {
-      "green": 1,
+      "green": 4,
       "amber": 2,
       "red": 0,
-      "unavailable": 3
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -160,21 +160,21 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 86.419,
+      "weight_kg": 86.879,
       "resting_hr": 54,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "hrv": 41.0,
+      "sleep_quality": 2,
+      "sleep_hours": 9.73,
+      "sleep_formatted": "9h44m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 41.5,
+    "recovery_index": 0.93,
+    "hrv_baseline_7d": 41.4,
     "rhr_baseline_7d": 50.9,
-    "hrv_baseline_28d": 43.7,
+    "hrv_baseline_28d": 43.6,
     "rhr_baseline_28d": 50.5,
-    "latest_hrv": null,
+    "latest_hrv": 41.0,
     "latest_rhr": 54,
     "acwr": 1.44,
     "acwr_interpretation": "caution",
@@ -187,7 +187,7 @@
     "multi_sport_detected": false,
     "strain": 351.0,
     "stress_tolerance": 7.2,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 7.7,
     "tss_7d_total": 717.0,
     "tss_28d_total": 1996.0,
     "zone_distribution_7d": {
@@ -317,7 +317,7 @@
           "race_proximity": 12,
           "next_week_load": 1.46,
           "plan_coverage_current_week": 0.8,
-          "plan_coverage_next_week": 0.8
+          "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -350,9 +350,9 @@
     "p_max": 718,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-18T11:32:54.982220",
+    "calculation_timestamp": "2026-05-18T12:53:24.111449",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 5,
       "activities_28d": 18,
@@ -724,14 +724,14 @@
     },
     {
       "date": "2026-05-18",
-      "weight_kg": null,
+      "weight_kg": 86.879,
       "resting_hr": 54,
-      "hrv_rmssd": null,
+      "hrv_rmssd": 41.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 9.73,
+      "sleep_formatted": "9h44m",
+      "sleep_quality": 2,
+      "sleep_score": 85.0,
       "mental_energy": null,
       "fatigue": 3,
       "soreness": 3,
@@ -804,6 +804,19 @@
       "workout_summary": null,
       "distance_target": 301537.0,
       "description": ""
+    },
+    {
+      "id": 110873212,
+      "date": "2026-05-25",
+      "name": "IntervalCoach - Aerobic Build",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.5,
+      "time_target": 5400,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie! Endurance ride today. 14m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 17m 65% 85rpm\n- Build 17m 67% 88rpm\n- Upper Z2 17m 70-74% 90rpm\n- Cruise 16m 74-70% 88rpm\n\nCooldown\n- Awesome job, Duppie! Recover well. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Holiday]"
     },
     {
       "id": 109804296,
@@ -1145,19 +1158,19 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 4
+    "bail_no_match": 5
   },
   "weekly_summary": {
     "total_training_hours": 18.97,
     "total_training_formatted": "18h58m",
     "total_tss": 717,
     "activities_count": 5,
-    "avg_hrv": 41.5,
+    "avg_hrv": 41.4,
     "avg_resting_hr": 50.9
   },
   "race_calendar": {
