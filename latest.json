@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-30T22:51:28.807929",
+    "last_updated": "2026-05-30T23:27:45.397634",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -347,7 +347,7 @@
     "p_max": 713,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 39.0,
-    "calculation_timestamp": "2026-05-30T22:51:28.807043",
+    "calculation_timestamp": "2026-05-30T23:27:45.396729",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -647,7 +647,7 @@
       "description": "https://go.randoplan.com/pKd8N4"
     },
     {
-      "id": 113208599,
+      "id": 113211327,
       "date": "2026-05-31",
       "name": "IntervalCoach - Aerobic Endurance",
       "type": "WORKOUT",
@@ -657,7 +657,7 @@
       "duration_formatted": "4h58m",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Active recovery ride ahead. 15m ramp 45-55% 85rpm\n\nMain Set\n- Easy Spin 137m 46-50% 80rpm\n- Loosen Up 136m 50% 85rpm\n\nCooldown\n- Well done, Duppie! Enjoy the spin. 10m ramp 55-45% 85rpm\n\n[Weekly Plan - Build]"
+      "description": "Warmup\n- Hey Duppie! Active recovery ride ahead. 15m ramp 45-55% 85rpm\n\nMain Set\n- Easy Spin 137m 46-50% 80rpm\n- Loosen Up 136m 50% 85rpm\n\nCooldown\n- Nice work, Duppie! Recover well. 10m ramp 55-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
       "id": 112567701,
@@ -673,9 +673,9 @@
       "description": ""
     },
     {
-      "id": 113208600,
+      "id": 113211328,
       "date": "2026-06-02",
-      "name": "IntervalCoach - Recovery",
+      "name": "IntervalCoach - Aerobic Endurance",
       "type": "WORKOUT",
       "planned_tss": null,
       "duration_hours": 1.0,
@@ -683,33 +683,33 @@
       "duration_formatted": "1h",
       "workout_summary": null,
       "distance_target": null,
-      "description": "60m 55%\n\n[Weekly Plan - Holiday]"
+      "description": "Warmup\n- Hey Duppie! Endurance and cadence awaits. 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Awesome work, Duppie! Recover well. 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
-      "id": 112567702,
+      "id": 113211330,
       "date": "2026-06-03",
-      "name": "Aerobic Endurance",
+      "name": "IntervalCoach - Endurance + Tempo Pushes",
       "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 1.08,
-      "time_target": 3900,
-      "duration_formatted": "1h5m",
+      "duration_hours": 1.0,
+      "time_target": 3600,
+      "duration_formatted": "1h",
       "workout_summary": null,
       "distance_target": null,
-      "description": "## STAS\nPost-brevet return to aerobic work. Steady Z2, no surges. HR and power should feel controlled throughout. If legs still heavy from Saturday, stay at Z1 lower end.\n\n---\n\n## Workout\nWarmup\n- 10m 50%-65% 85rpm\n\nMain Set\n- 45m 65%-73% 85rpm-88rpm\n\nCooldown\n- 10m 50%-60% 80rpm"
+      "description": "Warmup\n- Hey Duppie! Endurance and tempo awaits 9m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 1 11m 65-75% 88rpm\n- Tempo 1 5m 76-82% 90rpm\n- Endurance 2 11m 65-75% 88rpm\n- Tempo 2 5m 76-82% 90rpm\n- Endurance 3 11m 65-75% 88rpm\n- Endurance 2m 60-70%\n\nCooldown\n- Awesome job, recover well 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
-      "id": 113208601,
+      "id": 113211332,
       "date": "2026-06-04",
-      "name": "IntervalCoach - Sweet Spot Intervals",
+      "name": "IntervalCoach - Progressive Threshold",
       "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 3.04,
-      "time_target": 10950,
-      "duration_formatted": "3h2m30s",
-      "workout_summary": "12m @114W | 1m @172W | 30s @104W | 1m @172W | 30s @104W | 46m @132W | 12m @170W | 3m @104W | 11m @169W | 3m @104W | 10m @172W | 3m @104W | 9m @171W | 3m @104W | 8m @174W | 5\u00d78m @132W / 30s rec | 7m @132W | 10m @104W",
+      "duration_hours": 3.1,
+      "time_target": 11160,
+      "duration_formatted": "3h6m",
+      "workout_summary": "15m @114W | 6\u00d78m @132W / 30s rec | 5m @132W | 10m @195W | 3m @104W | 10m @199W | 3m @104W | 10m @199W | 3m @104W | 10m @199W | 6\u00d78m @132W / 30s rec | 5m @132W | 10m @104W",
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Sweet spot endurance ahead 12m ramp 45-75% 85rpm\n- Primer 1 1m 91% 90rpm\n- Primer recovery 30s 55% 85rpm\n- Primer 2 1m 91% 90rpm\n- Primer recovery 30s 55% 85rpm\n\nMain Set\n- Endurance 46m 65-75% 85rpm\n- Sweet Spot 1 12m 88-92% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 2 11m 89% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 3 10m 89-93% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 4 9m 90% 90rpm\n- Recovery 3m 55% 85rpm\n- Sweet Spot 5 8m 90-94% 90rpm\n\n5x\n- Endurance 8m 65-75% 85rpm\n- Z2 Pickup 30s 86-94% 95rpm\n\nRecovery\n- Endurance 7m 65-75% 85rpm\n\nCooldown\n- Fantastic ride, recover well 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Holiday]"
+      "description": "Warmup\n- Hey Duppie! Progressive threshold awaits. 15m ramp 45-75% 85rpm\n\nMain Set\n6x\n- Endurance 8m 65-75% 85rpm\n- Z2 Pickup 30s 86-94% 95rpm\n\nRecovery\n- Endurance 5m 65-75% 85rpm\n- Build 1 10m 101-105% 88rpm\n- Recovery 3m 55% 80rpm\n- Build 2 10m 105% 90rpm\n- Recovery 3m 55% 80rpm\n- Build 3 10m 105% 93rpm\n- Recovery 3m 55% 80rpm\n- Build 4 10m 105% 95rpm\n\n6x\n- Endurance 8m 65-75% 85rpm\n- Z2 Pickup 30s 86-94% 95rpm\n\nRecovery\n- Endurance 5m 65-75% 85rpm\n\nCooldown\n- Fantastic work, Duppie. Recover well. 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
       "id": 86936619,
@@ -999,12 +999,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
+    "attempted": 4,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
-    "bail_no_workout_doc": 2,
-    "bail_no_match": 2
+    "bail_no_workout_doc": 1,
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 5.23,
@@ -1059,7 +1059,7 @@
         "type": "Ride",
         "days_until": 68,
         "moving_time_seconds": 324000,
-        "distance_meters": 1198962.0
+        "distance_meters": 1000000.0
       },
       {
         "name": "Chi Rando 600K",
