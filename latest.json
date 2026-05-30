@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-30T17:11:04.551940",
+    "last_updated": "2026-05-30T17:39:30.135181",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -348,7 +348,7 @@
     "p_max": 713,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 39.0,
-    "calculation_timestamp": "2026-05-30T17:11:04.551053",
+    "calculation_timestamp": "2026-05-30T17:39:30.134314",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -649,16 +649,16 @@
     },
     {
       "id": 112567701,
-      "date": "2026-06-02",
-      "name": "Easy Recovery Spin",
+      "date": "2026-06-01",
+      "name": "ride",
       "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 0.75,
-      "time_target": 2700,
-      "duration_formatted": "45m",
+      "duration_hours": 2.5,
+      "time_target": 9000,
+      "duration_formatted": "2h30m",
       "workout_summary": null,
       "distance_target": null,
-      "description": "## STAS\nPost-400k brevet day 2. Legs moving only \u2014 pure Z1, no pressure. If you feel rough, cut it short or skip entirely. Goal is blood flow, not training load.\n\n---\n\n## Workout\nEasy Spin\n- 45m Z1 80rpm-90rpm"
+      "description": ""
     },
     {
       "id": 112567702,
@@ -987,12 +987,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 3,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 1,
-    "bail_no_match": 4
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 5.23,
