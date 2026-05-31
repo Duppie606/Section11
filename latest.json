@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-31T20:30:48.838480",
+    "last_updated": "2026-05-31T21:09:45.161718",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -29,11 +29,29 @@
       "context": "ACWR 0.66 outside safe range. Injury/overreach risk elevated.",
       "persistence_days": null,
       "tier": 2
+    },
+    {
+      "metric": "race_week",
+      "value": 0,
+      "severity": "info",
+      "threshold": "RACE_A within 7 days",
+      "context": "Race week D-0 of 'Coulee Challenge'. Today: Race day, 0-0 TSS. Race effort",
+      "persistence_days": null,
+      "tier": 1
+    },
+    {
+      "metric": "race_week_tsb",
+      "value": -288.4,
+      "severity": "warning",
+      "threshold": "TSB target 10-25",
+      "context": "Projected race-day TSB -288.4 is below target range 10-25. Consider additional rest to reach target.",
+      "persistence_days": null,
+      "tier": 1
     }
   ],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "skip",
+    "priority": 1,
     "signals": {
       "hrv": {
         "status": "amber",
@@ -63,27 +81,23 @@
       "ri": {
         "status": "green",
         "value": 0.88
-      },
-      "tsb": {
-        "status": "green",
-        "value": 7.5
       }
     },
     "signal_summary": {
-      "green": 5,
+      "green": 4,
       "amber": 2,
       "red": 0,
       "unavailable": 0
     },
     "phase_context": {
-      "phase": "Build",
-      "phase_week": 1,
-      "amber_threshold": 3,
-      "modifier_applied": "build_loosened"
+      "phase": "Taper",
+      "phase_week": 0,
+      "amber_threshold": 1,
+      "modifier_applied": "race_week_tightened"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 5 green, 2 amber (threshold 3), 0 red.",
+    "reason": "P1 acute overload. TSB -288.42 < -30 with HRV -12.4% below baseline.",
     "alarm_refs": []
   },
   "history": {
@@ -115,16 +129,16 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 51.9,
-      "atl": 44.41,
-      "tsb": 7.49,
-      "ramp_rate": -2.45,
+      "ctl": 115.42,
+      "atl": 403.84,
+      "tsb": -288.42,
+      "ramp_rate": 61.07,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
-      "eftp": 184.8,
-      "w_prime": 13050,
-      "w_prime_kj": 13.0,
+      "eftp": 185.0,
+      "w_prime": 13063,
+      "w_prime_kj": 13.1,
       "p_max": 712,
       "vo2max": null,
       "sports": {
@@ -293,9 +307,11 @@
       ]
     },
     "phase_detection": {
-      "phase": "Build",
-      "confidence": "high",
-      "reason_codes": [],
+      "phase": "Taper",
+      "confidence": "medium",
+      "reason_codes": [
+        "RACE_IMMINENT"
+      ],
       "basis": {
         "stream_1": {
           "ctl_slope": 1.73,
@@ -305,22 +321,24 @@
         },
         "stream_2": {
           "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
-          "race_proximity": 27,
+          "hard_sessions_planned": 3,
+          "race_proximity": 0,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
+          "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
-        "stream_agreement": null
+        "stream_agreement": false
       },
       "previous_phase": "Build",
-      "phase_duration_weeks": 1,
+      "phase_duration_weeks": 0,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Build",
-    "phase_triggers": [],
+    "phase_detected": "Taper",
+    "phase_triggers": [
+      "RACE_IMMINENT"
+    ],
     "seasonal_context": "Build / Early Race Season",
     "benchmark_indoor": {
       "current_ftp": null,
@@ -336,19 +354,19 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 184.8,
-    "w_prime": 13050,
-    "w_prime_kj": 13.0,
+    "eftp": 185.0,
+    "w_prime": 13063,
+    "w_prime_kj": 13.1,
     "p_max": 712,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-31T20:30:48.837568",
+    "calculation_timestamp": "2026-05-31T21:09:45.160817",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
       "activities_7d": 4,
       "activities_28d": 13,
-      "planned_workouts_7d": 5,
+      "planned_workouts_7d": 8,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -673,6 +691,45 @@
   ],
   "planned_workouts": [
     {
+      "id": 86936982,
+      "date": "2026-05-31",
+      "name": "Chi Rando 600K",
+      "type": "RACE_B",
+      "planned_tss": null,
+      "duration_hours": 37.0,
+      "time_target": 133200,
+      "duration_formatted": "37h",
+      "workout_summary": null,
+      "distance_target": 600000.0,
+      "description": ""
+    },
+    {
+      "id": 93678876,
+      "date": "2026-05-31",
+      "name": "Coulee Challenge",
+      "type": "RACE_A",
+      "planned_tss": null,
+      "duration_hours": 90.0,
+      "time_target": 324000,
+      "duration_formatted": "90h",
+      "workout_summary": null,
+      "distance_target": 1200000.0,
+      "description": ""
+    },
+    {
+      "id": 98977956,
+      "date": "2026-05-31",
+      "name": "Spotted Cow in a Barrel 600k",
+      "type": "RACE_B",
+      "planned_tss": null,
+      "duration_hours": 37.0,
+      "time_target": 133200,
+      "duration_formatted": "37h",
+      "workout_summary": null,
+      "distance_target": 600000.0,
+      "description": ""
+    },
+    {
       "id": 112567701,
       "date": "2026-06-01",
       "name": "ride",
@@ -829,16 +886,16 @@
       "description_preview": null
     },
     {
-      "id": 98977956,
+      "id": 113399244,
       "date": "2026-07-11",
-      "name": "Spotted Cow in a Barrel 600k",
-      "type": "RACE_B",
+      "name": "spotted cow in a barrel 600k",
+      "type": "RACE_A",
       "planned_tss": null,
       "duration_hours": 37.0,
       "time_target": 133200,
       "duration_formatted": "37h",
       "workout_summary": null,
-      "distance_target": null,
+      "distance_target": 600000.0,
       "description_preview": null
     },
     {
@@ -1029,15 +1086,42 @@
   },
   "race_calendar": {
     "next_race": {
-      "name": "Chicago - Dunelands - Chicago 300k",
-      "date": "2026-06-27",
-      "category": "RACE_C",
+      "name": "Coulee Challenge",
+      "date": "2026-05-31",
+      "category": "RACE_A",
       "type": "Ride",
-      "days_until": 27,
-      "moving_time_seconds": 64800,
-      "distance_meters": 299338.0
+      "days_until": 0,
+      "moving_time_seconds": 324000,
+      "distance_meters": 1200000.0
     },
     "all_races": [
+      {
+        "name": "Coulee Challenge",
+        "date": "2026-05-31",
+        "category": "RACE_A",
+        "type": "Ride",
+        "days_until": 0,
+        "moving_time_seconds": 324000,
+        "distance_meters": 1200000.0
+      },
+      {
+        "name": "Spotted Cow in a Barrel 600k",
+        "date": "2026-05-31",
+        "category": "RACE_B",
+        "type": "Ride",
+        "days_until": 0,
+        "moving_time_seconds": 133200,
+        "distance_meters": 600000.0
+      },
+      {
+        "name": "Chi Rando 600K",
+        "date": "2026-05-31",
+        "category": "RACE_B",
+        "type": "Ride",
+        "days_until": 0,
+        "moving_time_seconds": 133200,
+        "distance_meters": 600000.0
+      },
       {
         "name": "Chicago - Dunelands - Chicago 300k",
         "date": "2026-06-27",
@@ -1048,38 +1132,71 @@
         "distance_meters": 299338.0
       },
       {
-        "name": "Spotted Cow in a Barrel 600k",
+        "name": "spotted cow in a barrel 600k",
         "date": "2026-07-11",
-        "category": "RACE_B",
+        "category": "RACE_A",
         "type": "Ride",
         "days_until": 41,
         "moving_time_seconds": 133200,
-        "distance_meters": 603504.0
-      },
-      {
-        "name": "Coulee Challenge",
-        "date": "2026-08-06",
-        "category": "RACE_A",
-        "type": "Ride",
-        "days_until": 67,
-        "moving_time_seconds": 324000,
-        "distance_meters": 999999.0
-      },
-      {
-        "name": "Chi Rando 600K",
-        "date": "2026-08-22",
-        "category": "RACE_B",
-        "type": "Ride",
-        "days_until": 83,
-        "moving_time_seconds": 126000,
-        "distance_meters": 603504.0
+        "distance_meters": 600000.0
       }
     ],
     "taper_alert": {
       "active": false
     },
     "race_week": {
-      "active": false
+      "active": true,
+      "event_name": "Coulee Challenge",
+      "event_date": "2026-05-31",
+      "event_category": "RACE_A",
+      "event_type": "Ride",
+      "event_duration_class": "long_endurance",
+      "event_moving_time_seconds": 324000,
+      "days_until_event": 0,
+      "current_day": "D-0",
+      "ctl_baseline": 115.4,
+      "normal_weekly_tss": 807.9,
+      "race_week_tss_budget": {
+        "min": 323,
+        "max": 444
+      },
+      "race_week_tss_spent": 257,
+      "race_week_tss_remaining": {
+        "min": 66,
+        "max": 187
+      },
+      "projected_race_day_tsb": -288.4,
+      "tsb_target_range": {
+        "min": 10,
+        "max": 25
+      },
+      "today": {
+        "label": "Race day",
+        "load_target_tss": {
+          "min": 0,
+          "max": 0
+        },
+        "zones": "Race effort",
+        "purpose": "Go/no-go assessment. Execute race plan."
+      },
+      "carb_loading": {
+        "applicable": true,
+        "active": true,
+        "starts": "D-4",
+        "start_date": "2026-05-27",
+        "note": "10-12 g\u00b7kg\u207b\u00b9/day. No depletion phase needed."
+      },
+      "opener": {
+        "day": "D-2",
+        "date": "2026-05-29",
+        "intensity": "lighter"
+      },
+      "go_no_go": {
+        "tsb_status": "flag",
+        "notes": [
+          "Projected race-day TSB -288.4 is significantly below target range 10-25. Fatigue may impact performance."
+        ]
+      }
     }
   }
 }
