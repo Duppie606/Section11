@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-30T23:53:56.464694",
+    "last_updated": "2026-05-31T01:12:04.219866",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -23,10 +23,10 @@
   "alerts": [
     {
       "metric": "acwr",
-      "value": 0.52,
+      "value": 0.62,
       "severity": "alarm",
       "threshold": "0.75 / 1.35",
-      "context": "ACWR 0.52 outside safe range. Injury/overreach risk elevated.",
+      "context": "ACWR 0.62 outside safe range. Injury/overreach risk elevated.",
       "persistence_days": null,
       "tier": 2
     }
@@ -36,44 +36,44 @@
     "priority": 2,
     "signals": {
       "hrv": {
-        "status": "green",
-        "value": 50.0,
-        "baseline_7d": 44.8,
-        "delta_pct": 11.6
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 45.6,
+        "delta_pct": null
       },
       "rhr": {
-        "status": "green",
-        "value": 51,
-        "baseline_7d": 52.1,
-        "delta_bpm": -1.1
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 52.3,
+        "delta_bpm": null
       },
       "sleep": {
-        "status": "green",
-        "hours": 7.35,
-        "quality": 2
+        "status": "unavailable",
+        "hours": null,
+        "quality": null
       },
       "acwr": {
         "status": "amber",
-        "value": 0.52
+        "value": 0.62
       },
       "feel": {
         "status": "green",
         "value": 2
       },
       "ri": {
-        "status": "green",
-        "value": 1.14
+        "status": "unavailable",
+        "value": null
       },
       "tsb": {
         "status": "red",
-        "value": -61.9
+        "value": -46.3
       }
     },
     "signal_summary": {
-      "green": 5,
+      "green": 1,
       "amber": 1,
       "red": 1,
-      "unavailable": 0
+      "unavailable": 4
     },
     "phase_context": {
       "phase": "Build",
@@ -99,7 +99,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-05-11",
-    "age_days": 19,
+    "age_days": 20,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -119,18 +119,18 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 66.9,
-      "atl": 128.79,
-      "tsb": -61.89,
-      "ramp_rate": 11.24,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ctl": 65.33,
+      "atl": 111.65,
+      "tsb": -46.32,
+      "ramp_rate": 10.98,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": 185.2,
       "w_prime": 13076,
       "w_prime_kj": 13.1,
       "p_max": 713,
-      "vo2max": 39.0,
+      "vo2max": null,
       "sports": {
         "cycling": {
           "lthr": 161,
@@ -161,21 +161,21 @@
     "current_metrics": {
       "weight_kg": 86.12,
       "resting_hr": 51,
-      "hrv": 50.0,
-      "sleep_quality": 2,
-      "sleep_hours": 7.35,
-      "sleep_formatted": "7h21m"
+      "hrv": null,
+      "sleep_quality": null,
+      "sleep_hours": null,
+      "sleep_formatted": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.14,
-    "hrv_baseline_7d": 44.8,
-    "rhr_baseline_7d": 52.1,
-    "hrv_baseline_28d": 44.1,
+    "recovery_index": null,
+    "hrv_baseline_7d": 45.6,
+    "rhr_baseline_7d": 52.3,
+    "hrv_baseline_28d": 44.3,
     "rhr_baseline_28d": 51.6,
-    "latest_hrv": 50.0,
-    "latest_rhr": 51,
-    "acwr": 0.52,
+    "latest_hrv": null,
+    "latest_rhr": null,
+    "acwr": 0.62,
     "acwr_interpretation": "undertraining",
     "monotony": 0.42,
     "monotony_interpretation": "normal",
@@ -186,9 +186,9 @@
     "multi_sport_detected": false,
     "strain": 102.0,
     "stress_tolerance": 2.4,
-    "load_recovery_ratio": 2.1,
+    "load_recovery_ratio": null,
     "tss_7d_total": 242.0,
-    "tss_28d_total": 1856.0,
+    "tss_28d_total": 1552.0,
     "zone_distribution_7d": {
       "z1_hours": 2.36,
       "z2_hours": 1.72,
@@ -226,22 +226,22 @@
       "sport": "cycling"
     },
     "seiler_tid_28d": {
-      "z1_seconds": 139812,
-      "z2_seconds": 14878,
-      "z3_seconds": 12850,
-      "z1_pct": 83.4,
-      "z2_pct": 8.9,
-      "z3_pct": 7.7,
+      "z1_seconds": 108535,
+      "z2_seconds": 12816,
+      "z3_seconds": 11147,
+      "z1_pct": 81.9,
+      "z2_pct": 9.7,
+      "z3_pct": 8.4,
       "polarization_index": null,
       "classification": "Pyramidal"
     },
     "seiler_tid_28d_primary": {
-      "z1_seconds": 139812,
-      "z2_seconds": 14878,
-      "z3_seconds": 12850,
-      "z1_pct": 83.4,
-      "z2_pct": 8.9,
-      "z3_pct": 7.7,
+      "z1_seconds": 108535,
+      "z2_seconds": 12816,
+      "z3_seconds": 11147,
+      "z1_pct": 81.9,
+      "z2_pct": 9.7,
+      "z3_pct": 8.4,
       "polarization_index": null,
       "classification": "Pyramidal",
       "sport": "cycling"
@@ -289,8 +289,8 @@
       "completed_days": 2,
       "matched_days": 0,
       "planned_dates": [
-        "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-31"
       ],
       "completed_dates": [
         "2026-05-28",
@@ -310,10 +310,10 @@
         },
         "stream_2": {
           "planned_tss_delta": null,
-          "hard_sessions_planned": 2,
-          "race_proximity": 0,
+          "hard_sessions_planned": 1,
+          "race_proximity": 27,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.4,
+          "plan_coverage_current_week": 0.2,
           "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
@@ -346,13 +346,13 @@
     "w_prime_kj": 13.1,
     "p_max": 713,
     "power_model_source": "wellness.sportInfo",
-    "vo2max": 39.0,
-    "calculation_timestamp": "2026-05-30T23:53:56.463816",
+    "vo2max": null,
+    "calculation_timestamp": "2026-05-31T01:12:04.219004",
     "data_quality": {
-      "hrv_data_points": 6,
-      "rhr_data_points": 7,
+      "hrv_data_points": 5,
+      "rhr_data_points": 6,
       "activities_7d": 3,
-      "activities_28d": 15,
+      "activities_28d": 12,
       "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
@@ -520,22 +520,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-05-24",
-      "weight_kg": 86.16,
-      "resting_hr": 51,
-      "hrv_rmssd": 41.0,
-      "hrv_sdnn": null,
-      "sleep_hours": 9.22,
-      "sleep_formatted": "9h13m",
-      "sleep_quality": 2,
-      "sleep_score": 83.0,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
-    {
       "date": "2026-05-25",
       "weight_kg": 85.95586,
       "resting_hr": 53,
@@ -630,22 +614,25 @@
       "soreness": 1,
       "avg_sleeping_hr": null,
       "vo2max": 39.0
+    },
+    {
+      "date": "2026-05-31",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
-    {
-      "id": 86936945,
-      "date": "2026-05-30",
-      "name": "Aurora City of Lights 400k Brevet",
-      "type": "RACE_C",
-      "planned_tss": null,
-      "duration_hours": 21.0,
-      "time_target": 75600,
-      "duration_formatted": "21h",
-      "workout_summary": null,
-      "distance_target": null,
-      "description": "https://go.randoplan.com/pKd8N4"
-    },
     {
       "id": 113211327,
       "date": "2026-05-31",
@@ -1003,7 +990,7 @@
     "success": 1,
     "patternA": 1,
     "patternB": 0,
-    "bail_no_workout_doc": 1,
+    "bail_no_workout_doc": 0,
     "bail_no_match": 3
   },
   "weekly_summary": {
@@ -1011,35 +998,26 @@
     "total_training_formatted": "5h13m",
     "total_tss": 242,
     "activities_count": 3,
-    "avg_hrv": 44.8,
-    "avg_resting_hr": 52.1
+    "avg_hrv": 45.6,
+    "avg_resting_hr": 52.3
   },
   "race_calendar": {
     "next_race": {
-      "name": "Aurora City of Lights 400k Brevet",
-      "date": "2026-05-30",
+      "name": "Chicago - Dunelands - Chicago 300k",
+      "date": "2026-06-27",
       "category": "RACE_C",
       "type": "Ride",
-      "days_until": 0,
-      "moving_time_seconds": 75600,
-      "distance_meters": 410383.0
+      "days_until": 27,
+      "moving_time_seconds": 64800,
+      "distance_meters": 299338.0
     },
     "all_races": [
-      {
-        "name": "Aurora City of Lights 400k Brevet",
-        "date": "2026-05-30",
-        "category": "RACE_C",
-        "type": "Ride",
-        "days_until": 0,
-        "moving_time_seconds": 75600,
-        "distance_meters": 410383.0
-      },
       {
         "name": "Chicago - Dunelands - Chicago 300k",
         "date": "2026-06-27",
         "category": "RACE_C",
         "type": "Ride",
-        "days_until": 28,
+        "days_until": 27,
         "moving_time_seconds": 64800,
         "distance_meters": 299338.0
       },
@@ -1048,7 +1026,7 @@
         "date": "2026-07-11",
         "category": "RACE_B",
         "type": "Ride",
-        "days_until": 42,
+        "days_until": 41,
         "moving_time_seconds": 133200,
         "distance_meters": 603504.0
       },
@@ -1057,7 +1035,7 @@
         "date": "2026-08-06",
         "category": "RACE_A",
         "type": "Ride",
-        "days_until": 68,
+        "days_until": 67,
         "moving_time_seconds": 324000,
         "distance_meters": 999999.0
       },
@@ -1066,7 +1044,7 @@
         "date": "2026-08-22",
         "category": "RACE_B",
         "type": "Ride",
-        "days_until": 84,
+        "days_until": 83,
         "moving_time_seconds": 126000,
         "distance_meters": 603504.0
       }
