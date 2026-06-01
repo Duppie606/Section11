@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-31T23:39:21.336831",
+    "last_updated": "2026-06-01T00:10:07.501541",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -29,46 +29,28 @@
       "context": "ACWR 0.66 outside safe range. Injury/overreach risk elevated.",
       "persistence_days": null,
       "tier": 2
-    },
-    {
-      "metric": "race_week",
-      "value": 0,
-      "severity": "info",
-      "threshold": "RACE_A within 7 days",
-      "context": "Race week D-0 of 'Coulee Challenge'. Today: Race day, 0-0 TSS. Race effort",
-      "persistence_days": null,
-      "tier": 1
-    },
-    {
-      "metric": "race_week_tsb",
-      "value": -288.4,
-      "severity": "warning",
-      "threshold": "TSB target 10-25",
-      "context": "Projected race-day TSB -288.4 is below target range 10-25. Consider additional rest to reach target.",
-      "persistence_days": null,
-      "tier": 1
     }
   ],
   "readiness_decision": {
-    "recommendation": "skip",
-    "priority": 1,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
-        "status": "amber",
-        "value": 39.0,
+        "status": "unavailable",
+        "value": null,
         "baseline_7d": 44.5,
-        "delta_pct": -12.4
+        "delta_pct": null
       },
       "rhr": {
-        "status": "green",
-        "value": 52,
-        "baseline_7d": 52.3,
-        "delta_bpm": -0.3
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 52.2,
+        "delta_bpm": null
       },
       "sleep": {
-        "status": "green",
-        "hours": 9.0,
-        "quality": 2
+        "status": "unavailable",
+        "hours": null,
+        "quality": null
       },
       "acwr": {
         "status": "amber",
@@ -79,31 +61,35 @@
         "value": 2
       },
       "ri": {
+        "status": "unavailable",
+        "value": null
+      },
+      "tsb": {
         "status": "green",
-        "value": 0.88
+        "value": 12.2
       }
     },
     "signal_summary": {
-      "green": 4,
-      "amber": 2,
+      "green": 2,
+      "amber": 1,
       "red": 0,
-      "unavailable": 0
+      "unavailable": 4
     },
     "phase_context": {
-      "phase": "Taper",
-      "phase_week": 0,
-      "amber_threshold": 1,
-      "modifier_applied": "race_week_tightened"
+      "phase": "Build",
+      "phase_week": 1,
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P1 acute overload. TSB -288.42 < -30 with HRV -12.4% below baseline.",
+    "reason": "P3 green light. 2 green, 1 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
     "alarm_refs": []
   },
   "history": {
     "available": true,
     "last_generated": "2026-05-11",
-    "age_days": 20,
+    "age_days": 21,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -129,17 +115,17 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 115.42,
-      "atl": 403.84,
-      "tsb": -288.42,
-      "ramp_rate": 61.07,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ctl": 50.68,
+      "atl": 38.49,
+      "tsb": 12.19,
+      "ramp_rate": -2.4,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
-      "eftp": 185.0,
-      "w_prime": 13063,
-      "w_prime_kj": 13.1,
-      "p_max": 712,
+      "eftp": 184.6,
+      "w_prime": 13037,
+      "w_prime_kj": 13.0,
+      "p_max": 711,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -171,20 +157,20 @@
     "current_metrics": {
       "weight_kg": 85.9,
       "resting_hr": 52,
-      "hrv": 39.0,
-      "sleep_quality": 2,
-      "sleep_hours": 9.0,
-      "sleep_formatted": "9h"
+      "hrv": null,
+      "sleep_quality": null,
+      "sleep_hours": null,
+      "sleep_formatted": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.88,
+    "recovery_index": null,
     "hrv_baseline_7d": 44.5,
-    "rhr_baseline_7d": 52.3,
-    "hrv_baseline_28d": 44.1,
+    "rhr_baseline_7d": 52.2,
+    "hrv_baseline_28d": 44.6,
     "rhr_baseline_28d": 51.6,
-    "latest_hrv": 39.0,
-    "latest_rhr": 52,
+    "latest_hrv": null,
+    "latest_rhr": null,
     "acwr": 0.66,
     "acwr_interpretation": "undertraining",
     "monotony": 0.45,
@@ -196,7 +182,7 @@
     "multi_sport_detected": false,
     "strain": 116.0,
     "stress_tolerance": 2.6,
-    "load_recovery_ratio": 2.9,
+    "load_recovery_ratio": null,
     "tss_7d_total": 257.0,
     "tss_28d_total": 1567.0,
     "zone_distribution_7d": {
@@ -299,7 +285,7 @@
       "completed_days": 2,
       "matched_days": 0,
       "planned_dates": [
-        "2026-05-25"
+        "2026-06-01"
       ],
       "completed_dates": [
         "2026-05-28",
@@ -307,11 +293,9 @@
       ]
     },
     "phase_detection": {
-      "phase": "Taper",
-      "confidence": "medium",
-      "reason_codes": [
-        "RACE_IMMINENT"
-      ],
+      "phase": "Build",
+      "confidence": "high",
+      "reason_codes": [],
       "basis": {
         "stream_1": {
           "ctl_slope": 1.73,
@@ -322,23 +306,21 @@
         "stream_2": {
           "planned_tss_delta": null,
           "hard_sessions_planned": 3,
-          "race_proximity": 0,
-          "next_week_load": null,
-          "plan_coverage_current_week": 0.6,
-          "plan_coverage_next_week": 1.0
+          "race_proximity": 26,
+          "next_week_load": 2.08,
+          "plan_coverage_current_week": 1.0,
+          "plan_coverage_next_week": 0.4
         },
         "data_quality": "good",
-        "stream_agreement": false
+        "stream_agreement": null
       },
       "previous_phase": "Build",
-      "phase_duration_weeks": 0,
+      "phase_duration_weeks": 1,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Taper",
-    "phase_triggers": [
-      "RACE_IMMINENT"
-    ],
+    "phase_detected": "Build",
+    "phase_triggers": [],
     "seasonal_context": "Build / Early Race Season",
     "benchmark_indoor": {
       "current_ftp": null,
@@ -354,19 +336,19 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 185.0,
-    "w_prime": 13063,
-    "w_prime_kj": 13.1,
-    "p_max": 712,
+    "eftp": 184.6,
+    "w_prime": 13037,
+    "w_prime_kj": 13.0,
+    "p_max": 711,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-31T23:39:21.335988",
+    "calculation_timestamp": "2026-06-01T00:10:07.500740",
     "data_quality": {
       "hrv_data_points": 6,
-      "rhr_data_points": 7,
+      "rhr_data_points": 6,
       "activities_7d": 4,
       "activities_28d": 13,
-      "planned_workouts_7d": 8,
+      "planned_workouts_7d": 4,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -577,22 +559,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-05-25",
-      "weight_kg": 85.95586,
-      "resting_hr": 53,
-      "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": 8.78,
-      "sleep_formatted": "8h47m",
-      "sleep_quality": 2,
-      "sleep_score": 83.0,
-      "mental_energy": null,
-      "fatigue": 1,
-      "soreness": 1,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
-    {
       "date": "2026-05-26",
       "weight_kg": 86.889,
       "resting_hr": 51,
@@ -687,48 +653,25 @@
       "soreness": 2,
       "avg_sleeping_hr": null,
       "vo2max": null
+    },
+    {
+      "date": "2026-06-01",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
-    {
-      "id": 86936982,
-      "date": "2026-05-31",
-      "name": "Chi Rando 600K",
-      "type": "RACE_B",
-      "planned_tss": null,
-      "duration_hours": 37.0,
-      "time_target": 133200,
-      "duration_formatted": "37h",
-      "workout_summary": null,
-      "distance_target": 600000.0,
-      "description": ""
-    },
-    {
-      "id": 93678876,
-      "date": "2026-05-31",
-      "name": "Coulee Challenge",
-      "type": "RACE_A",
-      "planned_tss": null,
-      "duration_hours": 90.0,
-      "time_target": 324000,
-      "duration_formatted": "90h",
-      "workout_summary": null,
-      "distance_target": 1200000.0,
-      "description": ""
-    },
-    {
-      "id": 98977956,
-      "date": "2026-05-31",
-      "name": "Spotted Cow in a Barrel 600k",
-      "type": "RACE_B",
-      "planned_tss": null,
-      "duration_hours": 37.0,
-      "time_target": 133200,
-      "duration_formatted": "37h",
-      "workout_summary": null,
-      "distance_target": 600000.0,
-      "description": ""
-    },
     {
       "id": 112567701,
       "date": "2026-06-01",
@@ -805,7 +748,7 @@
       "duration_formatted": "15h56m",
       "workout_summary": null,
       "distance_target": 397797.0,
-      "description_preview": null
+      "description": ""
     },
     {
       "id": 92558889,
@@ -1082,52 +1025,25 @@
     "total_tss": 257,
     "activities_count": 4,
     "avg_hrv": 44.5,
-    "avg_resting_hr": 52.3
+    "avg_resting_hr": 52.2
   },
   "race_calendar": {
     "next_race": {
-      "name": "Coulee Challenge",
-      "date": "2026-05-31",
-      "category": "RACE_A",
+      "name": "Chicago - Dunelands - Chicago 300k",
+      "date": "2026-06-27",
+      "category": "RACE_C",
       "type": "Ride",
-      "days_until": 0,
-      "moving_time_seconds": 324000,
-      "distance_meters": 1200000.0
+      "days_until": 26,
+      "moving_time_seconds": 64800,
+      "distance_meters": 299338.0
     },
     "all_races": [
-      {
-        "name": "Coulee Challenge",
-        "date": "2026-05-31",
-        "category": "RACE_A",
-        "type": "Ride",
-        "days_until": 0,
-        "moving_time_seconds": 324000,
-        "distance_meters": 1200000.0
-      },
-      {
-        "name": "Spotted Cow in a Barrel 600k",
-        "date": "2026-05-31",
-        "category": "RACE_B",
-        "type": "Ride",
-        "days_until": 0,
-        "moving_time_seconds": 133200,
-        "distance_meters": 600000.0
-      },
-      {
-        "name": "Chi Rando 600K",
-        "date": "2026-05-31",
-        "category": "RACE_B",
-        "type": "Ride",
-        "days_until": 0,
-        "moving_time_seconds": 133200,
-        "distance_meters": 600000.0
-      },
       {
         "name": "Chicago - Dunelands - Chicago 300k",
         "date": "2026-06-27",
         "category": "RACE_C",
         "type": "Ride",
-        "days_until": 27,
+        "days_until": 26,
         "moving_time_seconds": 64800,
         "distance_meters": 299338.0
       },
@@ -1136,7 +1052,25 @@
         "date": "2026-07-11",
         "category": "RACE_A",
         "type": "Ride",
-        "days_until": 41,
+        "days_until": 40,
+        "moving_time_seconds": 133200,
+        "distance_meters": 600000.0
+      },
+      {
+        "name": "Coulee Challenge",
+        "date": "2026-08-06",
+        "category": "RACE_A",
+        "type": "Ride",
+        "days_until": 66,
+        "moving_time_seconds": 324000,
+        "distance_meters": 1200000.0
+      },
+      {
+        "name": "Chi Rando 600K",
+        "date": "2026-08-22",
+        "category": "RACE_B",
+        "type": "Ride",
+        "days_until": 82,
         "moving_time_seconds": 133200,
         "distance_meters": 600000.0
       }
@@ -1145,58 +1079,7 @@
       "active": false
     },
     "race_week": {
-      "active": true,
-      "event_name": "Coulee Challenge",
-      "event_date": "2026-05-31",
-      "event_category": "RACE_A",
-      "event_type": "Ride",
-      "event_duration_class": "long_endurance",
-      "event_moving_time_seconds": 324000,
-      "days_until_event": 0,
-      "current_day": "D-0",
-      "ctl_baseline": 115.4,
-      "normal_weekly_tss": 807.9,
-      "race_week_tss_budget": {
-        "min": 323,
-        "max": 444
-      },
-      "race_week_tss_spent": 257,
-      "race_week_tss_remaining": {
-        "min": 66,
-        "max": 187
-      },
-      "projected_race_day_tsb": -288.4,
-      "tsb_target_range": {
-        "min": 10,
-        "max": 25
-      },
-      "today": {
-        "label": "Race day",
-        "load_target_tss": {
-          "min": 0,
-          "max": 0
-        },
-        "zones": "Race effort",
-        "purpose": "Go/no-go assessment. Execute race plan."
-      },
-      "carb_loading": {
-        "applicable": true,
-        "active": true,
-        "starts": "D-4",
-        "start_date": "2026-05-27",
-        "note": "10-12 g\u00b7kg\u207b\u00b9/day. No depletion phase needed."
-      },
-      "opener": {
-        "day": "D-2",
-        "date": "2026-05-29",
-        "intensity": "lighter"
-      },
-      "go_no_go": {
-        "tsb_status": "flag",
-        "notes": [
-          "Projected race-day TSB -288.4 is significantly below target range 10-25. Fatigue may impact performance."
-        ]
-      }
+      "active": false
     }
   }
 }
