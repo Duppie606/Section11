@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-01T00:10:07.501541",
+    "last_updated": "2026-06-01T01:28:38.385184",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -342,7 +342,7 @@
     "p_max": 711,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-01T00:10:07.500740",
+    "calculation_timestamp": "2026-06-01T01:28:38.384357",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -832,7 +832,7 @@
       "id": 113399244,
       "date": "2026-07-11",
       "name": "spotted cow in a barrel 600k",
-      "type": "RACE_A",
+      "type": "RACE_B",
       "planned_tss": null,
       "duration_hours": 37.0,
       "time_target": 133200,
@@ -1050,7 +1050,7 @@
       {
         "name": "spotted cow in a barrel 600k",
         "date": "2026-07-11",
-        "category": "RACE_A",
+        "category": "RACE_B",
         "type": "Ride",
         "days_until": 40,
         "moving_time_seconds": 133200,
