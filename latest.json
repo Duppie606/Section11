@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-02T11:46:59.674466",
+    "last_updated": "2026-06-02T13:31:23.047357",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -293,7 +293,7 @@
           "race_proximity": 25,
           "next_week_load": 2.08,
           "plan_coverage_current_week": 0.8,
-          "plan_coverage_next_week": 0.6
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -326,7 +326,7 @@
     "p_max": 712,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-02T11:46:59.673625",
+    "calculation_timestamp": "2026-06-02T13:31:23.046559",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -787,6 +787,19 @@
       "description": "Warmup\n- Hey Duppie! Long endurance ride awaits 15m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 39m 65% 85rpm\n- Build 39m 67% 88rpm\n- Upper Z2 39m 70-74% 90rpm\n- Cruise 38m 74-70% 88rpm\n\nCooldown\n- Great work, Duppie! Recover well 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
+      "id": 113794850,
+      "date": "2026-06-09",
+      "name": "IntervalCoach - Aerobic Endurance",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "time_target": 3600,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie! Long aerobic ride today 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Great work, enjoy the spin down 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
       "id": 92558889,
       "date": "2026-06-14",
       "name": "ChiRando 200k",
@@ -1048,12 +1061,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 8.66,
