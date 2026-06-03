@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-03T11:46:41.485576",
+    "last_updated": "2026-06-03T13:52:21.407187",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -145,7 +145,7 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 86.11,
+      "weight_kg": 86.091934,
       "resting_hr": 50,
       "hrv": 47.0,
       "sleep_quality": 1,
@@ -300,7 +300,7 @@
           "race_proximity": 24,
           "next_week_load": 2.08,
           "plan_coverage_current_week": 0.8,
-          "plan_coverage_next_week": 0.8
+          "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -333,7 +333,7 @@
     "p_max": 712,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-03T11:46:41.484777",
+    "calculation_timestamp": "2026-06-03T13:52:21.406398",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -699,7 +699,7 @@
     },
     {
       "date": "2026-06-03",
-      "weight_kg": 86.11,
+      "weight_kg": 86.091934,
       "resting_hr": 50,
       "hrv_rmssd": 47.0,
       "hrv_sdnn": null,
@@ -708,8 +708,8 @@
       "sleep_quality": 1,
       "sleep_score": 90.0,
       "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
+      "fatigue": 1,
+      "soreness": 1,
       "avg_sleeping_hr": null,
       "vo2max": null
     }
@@ -721,12 +721,12 @@
       "name": "IntervalCoach - Endurance + Tempo Pushes",
       "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 1.0,
-      "time_target": 3600,
-      "duration_formatted": "1h",
+      "duration_hours": 1.08,
+      "time_target": 3900,
+      "duration_formatted": "1h5m",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Endurance and tempo awaits 9m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 1 11m 65-75% 88rpm\n- Tempo 1 5m 76-82% 90rpm\n- Endurance 2 11m 65-75% 88rpm\n- Tempo 2 5m 76-82% 90rpm\n- Endurance 3 11m 65-75% 88rpm\n- Endurance 2m 60-70%\n\nCooldown\n- Awesome job, recover well 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+      "description": "Warmup\n- Hey Duppie! Endurance and tempo awaits 9m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 1 11m 65-75% 88rpm\n- Tempo 1 5m 85% 90rpm\n- Endurance 2 11m 65-75% 88rpm\n- Tempo 2 5m 88% 90rpm\n- Endurance 3 11m 65-75% 88rpm\n- 5m 90% 90rpm\n- Endurance 2m 65%\n\nCooldown\n- Awesome job, recover well 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
       "id": 113211332,
@@ -734,12 +734,12 @@
       "name": "IntervalCoach - Progressive Threshold",
       "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 3.1,
-      "time_target": 11160,
-      "duration_formatted": "3h6m",
-      "workout_summary": "15m @114W | 6\u00d78m @132W / 30s rec | 5m @132W | 10m @195W | 3m @104W | 10m @199W | 3m @104W | 10m @199W | 3m @104W | 10m @199W | 6\u00d78m @132W / 30s rec | 5m @132W | 10m @104W",
+      "duration_hours": 2.53,
+      "time_target": 9120,
+      "duration_formatted": "2h32m",
+      "workout_summary": "15m @114W | 4\u00d78m @132W / 30s rec | 5m @132W | 10m @188W | 3m @104W | 10m @188W | 3m @104W | 10m @188W | 3m @104W | 10m @188W | 4\u00d78m @132W / 30s rec | 5m @132W | 10m @104W",
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Progressive threshold awaits. 15m ramp 45-75% 85rpm\n\nMain Set\n6x\n- Endurance 8m 65-75% 85rpm\n- Z2 Pickup 30s 86-94% 95rpm\n\nRecovery\n- Endurance 5m 65-75% 85rpm\n- Build 1 10m 101-105% 88rpm\n- Recovery 3m 55% 80rpm\n- Build 2 10m 105% 90rpm\n- Recovery 3m 55% 80rpm\n- Build 3 10m 105% 93rpm\n- Recovery 3m 55% 80rpm\n- Build 4 10m 105% 95rpm\n\n6x\n- Endurance 8m 65-75% 85rpm\n- Z2 Pickup 30s 86-94% 95rpm\n\nRecovery\n- Endurance 5m 65-75% 85rpm\n\nCooldown\n- Fantastic work, Duppie. Recover well. 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+      "description": "Warmup\n- Hey Duppie! Progressive threshold awaits. 15m ramp 45-75% 85rpm\n\nMain Set\n4x\n- Endurance 8m 65-75% 85rpm\n- Z2 Pickup 30s 86-94% 95rpm\n\nRecovery\n- Endurance 5m 65-75% 85rpm\n- Build 1 10m 99% 88rpm\n- Recovery 3m 55% 80rpm\n- Build 2 10m 99% 90rpm\n- Recovery 3m 55% 80rpm\n- Build 3 10m 99% 93rpm\n- Recovery 3m 55% 80rpm\n- Build 4 10m 99% 95rpm\n\n4x\n- Endurance 8m 65-75% 85rpm\n- Z2 Pickup 30s 86-94% 95rpm\n\nRecovery\n- Endurance 5m 65-75% 85rpm\n\nCooldown\n- Fantastic work, Duppie. Recover well. 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
       "id": 113211328,
@@ -805,6 +805,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": "Warmup\n- Hey Duppie! Long aerobic ride today 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Great work, enjoy the spin down 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 113985773,
+      "date": "2026-06-10",
+      "name": "IntervalCoach - Aerobic Build",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "time_target": 3600,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie! Endurance with pickups today. 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Fantastic ride, Duppie! Recover well. 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
       "id": 92558889,
@@ -1068,12 +1081,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
+    "attempted": 6,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 4
+    "bail_no_match": 5
   },
   "weekly_summary": {
     "total_training_hours": 8.66,
