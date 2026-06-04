@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-04T11:33:02.864601",
+    "last_updated": "2026-06-04T12:42:08.911677",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -56,7 +56,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 8.0
+        "value": 13.4
       }
     },
     "signal_summary": {
@@ -105,10 +105,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 51.47,
-      "atl": 43.48,
-      "tsb": 7.99,
-      "ramp_rate": 2.06,
+      "ctl": 50.14,
+      "atl": 36.78,
+      "tsb": 13.36,
+      "ramp_rate": 0.73,
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
@@ -145,7 +145,7 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 86.091934,
+      "weight_kg": 85.919,
       "resting_hr": 51,
       "hrv": 47.0,
       "sleep_quality": 2,
@@ -300,7 +300,7 @@
           "race_proximity": 23,
           "next_week_load": 2.08,
           "plan_coverage_current_week": 0.6,
-          "plan_coverage_next_week": 1.0
+          "plan_coverage_next_week": 1.2
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -333,7 +333,7 @@
     "p_max": 712,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-04T11:33:02.863799",
+    "calculation_timestamp": "2026-06-04T12:42:08.910834",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -595,7 +595,7 @@
     },
     {
       "date": "2026-06-04",
-      "weight_kg": null,
+      "weight_kg": 85.919,
       "resting_hr": 51,
       "hrv_rmssd": 47.0,
       "hrv_sdnn": null,
@@ -701,6 +701,19 @@
       "workout_summary": null,
       "distance_target": null,
       "description": "Warmup\n- Hey Duppie! Endurance with pickups today. 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Fantastic ride, Duppie! Recover well. 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 114162954,
+      "date": "2026-06-11",
+      "name": "IntervalCoach - Threshold Repeats",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 3.1,
+      "time_target": 11160,
+      "duration_formatted": "3h6m",
+      "workout_summary": "13m @114W | 30s @186W | 30s @104W | 30s @186W | 30s @104W | 6\u00d78m @132W / 30s rec | 6m @132W | 6\u00d71m @199W / 1m rec | 5m @104W | 6\u00d71m @199W / 1m rec | 5m @104W | 6\u00d71m @199W / 1m rec | 6\u00d78m @132W / 30s rec | 7m @132W | 10m @104W",
+      "distance_target": null,
+      "description": "Warmup\n- Hey Duppie, long endurance ride awaits! 13m ramp 45-75% 85rpm\n- Primer 1 30s 98% 90rpm\n- Primer recovery 30s 55% 85rpm\n- Primer 2 30s 98% 90rpm\n- Primer recovery 30s 55% 85rpm\n\nMain Set\n6x\n- Endurance 8m 65-75% 85rpm\n- Z2 Pickup 30s 86-94% 95rpm\n\nRecovery\n- Endurance 6m 65-75% 85rpm\n\n6x\n- Over 1m 105% 95rpm\n- Under 1m 95% 90rpm\n\nRecovery\n- Recovery 5m 55% 80rpm\n\n6x\n- Over 1m 105% 95rpm\n- Under 1m 95% 90rpm\n\nRecovery\n- Recovery 5m 55% 80rpm\n\n6x\n- Over 1m 105% 95rpm\n- Under 1m 95% 90rpm\n\n6x\n- Endurance 8m 65-75% 85rpm\n- Z2 Pickup 30s 86-94% 95rpm\n\nRecovery\n- Endurance 7m 65-75% 85rpm\n\nCooldown\n- Fantastic work, recover well Duppie 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
       "id": 92558889,
@@ -964,9 +977,9 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
-    "success": 1,
-    "patternA": 1,
+    "attempted": 6,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
     "bail_no_match": 4
