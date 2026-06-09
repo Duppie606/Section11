@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-09T15:38:10.013552",
+    "last_updated": "2026-06-09T16:38:31.738450",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -66,7 +66,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 8.9
+        "value": 21.1
       }
     },
     "signal_summary": {
@@ -109,10 +109,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 50.09,
-      "atl": 41.19,
-      "tsb": 8.9,
-      "ramp_rate": -2.49,
+      "ctl": 47.06,
+      "atl": 25.96,
+      "tsb": 21.1,
+      "ramp_rate": -5.52,
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
@@ -339,7 +339,7 @@
     "p_max": 709,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-09T15:38:10.012663",
+    "calculation_timestamp": "2026-06-09T16:38:31.737566",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -514,7 +514,7 @@
       "sleep_quality": 2,
       "sleep_score": 86.0,
       "mental_energy": null,
-      "fatigue": null,
+      "fatigue": 2,
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
@@ -522,17 +522,17 @@
   ],
   "planned_workouts": [
     {
-      "id": 113794850,
+      "id": 113563227,
       "date": "2026-06-09",
       "name": "IntervalCoach - Aerobic Endurance",
       "type": "WORKOUT",
       "planned_tss": null,
-      "duration_hours": 1.0,
-      "time_target": 3600,
-      "duration_formatted": "1h",
+      "duration_hours": 3.0,
+      "time_target": 10800,
+      "duration_formatted": "3h",
       "workout_summary": null,
       "distance_target": null,
-      "description": "Warmup\n- Hey Duppie! Long aerobic ride today 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Great work, enjoy the spin down 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+      "description": "Warmup\n- Hey Duppie! Long endurance ride awaits 15m ramp 45-65% 85rpm\n\nMain Set\n- Settle In 39m 65% 85rpm\n- Build 39m 67% 88rpm\n- Upper Z2 39m 69% 90rpm\n- Cruise 38m 71% 88rpm\n\nCooldown\n- Great work, Duppie! Recover well 10m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
       "id": 113985773,
