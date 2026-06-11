@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-11T22:13:13.248634",
+    "last_updated": "2026-06-11T22:55:40.064620",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -127,8 +127,8 @@
       "ctl": 48.87,
       "atl": 38.62,
       "tsb": 10.25,
-      "ramp_rate": -1.27,
-      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
+      "ramp_rate": -4.14,
+      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
       "eftp": 183.7,
@@ -288,16 +288,15 @@
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
       }
     },
-    "consistency_index": 0.25,
+    "consistency_index": 0.33,
     "consistency_details": {
-      "planned_days": 4,
+      "planned_days": 3,
       "completed_days": 2,
       "matched_days": 1,
       "planned_dates": [
         "2026-06-05",
         "2026-06-08",
-        "2026-06-10",
-        "2026-06-11"
+        "2026-06-10"
       ],
       "completed_dates": [
         "2026-06-09",
@@ -354,13 +353,13 @@
     "p_max": 707,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-11T22:13:13.247706",
+    "calculation_timestamp": "2026-06-11T22:55:40.063797",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 2,
       "activities_28d": 11,
-      "planned_workouts_7d": 7,
+      "planned_workouts_7d": 6,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -590,7 +589,7 @@
   "planned_workouts": [
     {
       "id": 115264042,
-      "date": "2026-06-11",
+      "date": "2026-06-12",
       "name": "IntervalCoach - Tempo",
       "type": "WORKOUT",
       "planned_tss": null,
